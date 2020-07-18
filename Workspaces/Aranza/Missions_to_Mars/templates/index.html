@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars, The Planet</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+    </div>
+    <h2>Latest Mars News:</h2>
+    <p><b>{{mars_info.Title }}</b></p>
+    <p>{{mars_info.Description }}</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h3>Featured Mars Image</h3>
+          <div class="container">
+            <img src= "{{mars_info.featured_url}}" alt="figure 1" class="img-thumbnail">
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Mars Facts</h3>
+          {{mars_info.Mars_Facts | safe }}
+        </div>
+      </div>
+    </div>
+    <h3>Mars Hemispheres</h3>
+    <div class="container">
+      <div class="row rows-cols-2">
+        <div class="col-6">
+          <div class="thumbnail">
+            <img src= {{ mars_info.Mars_Images[0].img_url }} alt="figure 1" class="img-thumbnail width: 50%">
+          <br>
+          <b>{{mars_info.Mars_Images[0].title}}</b>
+        </div>
+        </div>
+        <div class="col-6">
+          <div class="thumbnail">
+            <img src= {{ mars_info.Mars_Images[1].img_url }} alt="figure 2" class="img-thumbnail width: 50%">
+          </div>
+          <br>
+          <b>{{mars_info.Mars_Images[1].title}}</b>
+        </div>
+      <div class="row rows-cols-2"></div>
+        <div class="col-6">
+          <div class="thumbnail">
+            <img src= {{ mars_info.Mars_Images[2].img_url }} alt="figure 3" class="img-thumbnail">
+          </div>
+          <br>
+          <b>{{mars_info.Mars_Images[2].title}}</b>
+        </div>
+        <div class="col-6">
+          <div class="thumbnail">
+            <img src= {{ mars_info.Mars_Images[3].img_url }} alt="figure 4" class="img-thumbnail">
+          </div>
+        <br>
+        <b>{{mars_info.Mars_Images[3].title}}</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
