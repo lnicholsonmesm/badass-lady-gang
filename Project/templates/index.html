@@ -5,29 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pet Pals!</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Who uses the internet in Oregon?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/superhero/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron" style="text-align: center">
-            <h1>Pet Pal</h1>
-            <p>Find your pet a pal!</p>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Look at all of the current pet pals!</h2>
-                <div id="plot"></div>
+    <body>
+        <div class="wrapper">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Home
+                  <!--<img class="nav-ufo" src="static/images/ufo.svg">-->
+                </a>
+              </div>
             </div>
-        </div>
+          </nav>
+          <div class="hero text-center">
+            <h1>Who uses the internet in Oregon?</h1>
+            <p>Something catchy</p>
+          </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <h2><a href="/send">Add your pet here!</a></h2>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm row justify-content-center">
+                <button id="filter-btn" type="button" class="btn btn-dark">Income</button>
+              </div>
+              <div class="col-sm row justify-content-center">
+                <button id="filter-btn" type="button" class="btn btn-dark">Race</button>
+              </div>
+              <div class="col-sm row justify-content-center">
+                <button id="filter-btn" type="button" class="btn btn-dark">Education</button>
+              </div>
             </div>
+          </div>
+
+          <div class="row 10 md-n5">
+            <div class="col-lg-8 col-sm-12 px-md-5 py-5">
+                <h2>Where in Oregon?</h2>
+                <hr class="hr-internal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 row justify-content-center">
+                            <div id="map"></div>
+                            <p>Hi!</p>
+                            </div>
+                        </div></div></div>
+            <div class="col-lg-4 col-sm-12 px-md-5 py-5">
+                <h2>Treemap</h2>
+                <hr class="hr-internal">
+                <div class="container">
+                  <div class="row">    
+                    <div class="col-12 row justify-content-center">
+                        <div id="treemap"></div>
+                        <p>Hi!</p>
+                        </div>
+            </div>
+          </div>
         </div>
+        
+            <div class="col-md-12 row justify-content-center">
+                <h2>Bubble plots!</h2>
+                <div class="col-md-12 row justify-content-center">
+                    <div id="bubble"></div>
+                    <p>Hi!</p>
+                </div>
+            </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
