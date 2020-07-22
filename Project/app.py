@@ -51,7 +51,7 @@ def send():
     """
 
 
-@app.route("/api/pals")
+@app.route("/api") ----- can we merge into a single app.route?
 def pals():
     results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
 
