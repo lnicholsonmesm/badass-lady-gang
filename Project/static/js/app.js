@@ -1,6 +1,6 @@
 function buildPlot() {
   /* data route */
-  const url = "/api/pals";
+  const url = "/api";
   d3.json(url).then(function(response) {
 
     console.log(response);
@@ -30,5 +30,9 @@ function buildPlot() {
     Plotly.newPlot("plot", data, layout);
   });
 }
+
+//Create a bubble chart that displays each sample.      var trace2 = {        x:importedData.samples[0].otu_ids,        y: importedData.samples[0].sample_values,        mode: "markers",        marker: {          size: importedData.samples[0].sample_values,          color: importedData.samples[0].otu_ids,        }      }
+var bubbledata = [trace2];
+Plotly.newPlot("bubble", bubbledata); });
 
 buildPlot();

@@ -1,0 +1,5 @@
+*-checkpoint.ipynb
+*.pyc
+*ipynb_checkpoints
+config.py
+.DS_Store
