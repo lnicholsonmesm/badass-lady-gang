@@ -1,6 +1,6 @@
 var myMap = L.map("map-id", {
-        center: [45.52, -122.67],
-        zoom: 7,
+        center: [46.00, -122.67],
+        zoom:7,
         //layers: [population, internet, etc]
       });
       
