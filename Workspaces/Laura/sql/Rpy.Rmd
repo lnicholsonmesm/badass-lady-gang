@@ -1,0 +1,255 @@
+---
+title: "SQLAlchemy"
+author: "Laura Nicholson"
+date: "7/24/2020"
+output: html_document
+---
+# SQL Magic
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Get Dependencies
+R
+```{r}
+library(reticulate)
+use_condaenv("PythonData")
+```
+
+Python
+```{python}
+# SQLAlchemy
+from sqlalchemy import create_engine
+
+# Imports the methods needed to abstract classes into tables
+from sqlalchemy.ext.declarative import declarative_base
+
+# Allow us to declare column types
+from sqlalchemy import Table, Column, Integer, String, Float, MetaData
+
+#pandas for data manipulation and export
+import pandas as pd
+```
+
+## Set the sqlite database path
+```{python}
+db_uri = "sqlite:///db.sqlite"
+engine = create_engine(db_uri, echo = True)
+```
+
+# Get Data
+```{python}
+df = pd.read_csv("data/S2802.csv", na_values = ["-"])
+df = df.astype({"fips_id": "object"})
+print(df.dtypes[20:30])
+```
+```{python}
+df.to_sql("s2802", con=engine, if_exists="replace", index_label=None)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+library(reticulate)
+use_condaenv("PythonData")
+```
+
+
+# SQL Expression Language
+```{python}
+# Implement via overwrite special function
+from sqlalchemy import MetaData
+from sqlalchemy import Table
+from sqlalchemy import Column
+from sqlalchemy import Integer, String
+from sqlalchemy import or_
+
+meta = MetaData()
+table = Table('example', meta,
+              Column('id', Integer, primary_key=True),
+              Column('l_name', String),
+              Column('f_name', String))
+# sql expression binary object
+print(repr(table.c.l_name == 'ed'))
+# exhbit sql expression
+print(str(table.c.l_name == 'ed'))
+
+print(repr(table.c.f_name != 'ed'))
+
+# comparison operator
+print(repr(table.c.id > 3))
+
+# or expression
+print((table.c.id > 5) | (table.c.id < 2))
+# Equal to
+print(or_(table.c.id > 5, table.c.id < 2))
+
+# compare to None produce IS NULL
+print(table.c.l_name == None)
+# Equal to
+print(table.c.l_name.is_(None))
+
+# + means "addition"
+print(table.c.id + 5)
+# or means "string concatenation"
+print(table.c.l_name + "some name")
+
+# in expression
+print(table.c.l_name.in_(['a','b']))
+```
+# insert() - Create an “INSERT” Statement
+```{python}
+from sqlalchemy import create_engine
+from sqlalchemy import MetaData
+from sqlalchemy import Table
+from sqlalchemy import Column
+from sqlalchemy import Integer
+from sqlalchemy import String
+
+db_uri = 'sqlite:///db.sqlite'
+engine = create_engine(db_uri)
+
+# create table
+meta = MetaData(engine)
+table = Table('user', meta,
+   Column('id', Integer, primary_key=True),
+   Column('l_name', String),
+   Column('f_name', String))
+meta.create_all()
+
+# insert data via insert() construct
+ins = table.insert().values(
+      l_name='Hello',
+      f_name='World')
+conn = engine.connect()
+conn.execute(ins)
+
+# insert multiple data
+conn.execute(table.insert(),[
+   {'l_name':'Hi','f_name':'bob'},
+   {'l_name':'yo','f_name':'alice'}])
+```
+# select() - Create a “SELECT” Statement
+```{python}
+
+from sqlalchemy import create_engine
+from sqlalchemy import MetaData
+from sqlalchemy import Table
+from sqlalchemy import select
+from sqlalchemy import or_
+
+db_uri = 'sqlite:///db.sqlite'
+engine = create_engine(db_uri)
+conn = engine.connect()
+
+meta = MetaData(engine).reflect()
+table = meta.tables['user']
+
+# select * from 'user'
+select_st = select([table]).where(
+   table.c.l_name == 'Hello')
+res = conn.execute(select_st)
+for _row in res:
+    print(_row)
+
+# or equal to
+select_st = table.select().where(
+   table.c.l_name == 'Hello')
+res = conn.execute(select_st)
+for _row in res:
+    print(_row)
+
+# combine with "OR"
+select_st = select([
+   table.c.l_name,
+   table.c.f_name]).where(or_(
+      table.c.l_name == 'Hello',
+      table.c.l_name == 'Hi'))
+res = conn.execute(select_st)
+for _row in res:
+    print(_row)
+
+# combine with "ORDER_BY"
+select_st = select([table]).where(or_(
+      table.c.l_name == 'Hello',
+      table.c.l_name == 'Hi')).order_by(table.c.f_name)
+res = conn.execute(select_st)
+for _row in res:
+    print(_row)
+```
+
+
+# join() - Joined Two Tables via “JOIN” Statement
+```{python}
+from sqlalchemy import create_engine
+from sqlalchemy import MetaData
+from sqlalchemy import Table
+from sqlalchemy import Column
+from sqlalchemy import Integer
+from sqlalchemy import String
+from sqlalchemy import select
+
+db_uri = 'sqlite:///db.sqlite'
+engine = create_engine(db_uri)
+
+meta = MetaData(engine).reflect()
+email_t = Table('email_addr', meta,
+      Column('id', Integer, primary_key=True),
+      Column('email',String),
+      Column('name',String))
+meta.create_all()
+
+# get user table
+user_t = meta.tables['user']
+
+# insert
+conn = engine.connect()
+conn.execute(email_t.insert(),[
+   {'email':'ker@test','name':'Hi'},
+   {'email':'yo@test','name':'Hello'}])
+# join statement
+join_obj = user_t.join(email_t,
+           email_t.c.name == user_t.c.l_name)
+# using select_from
+sel_st = select(
+   [user_t.c.l_name, email_t.c.email]).select_from(join_obj)
+res = conn.execute(sel_st)
+for _row in res:
+    print(_row)
+```
+
+# Delete Rows from Table
+```{python}
+from sqlalchemy import create_engine
+from sqlalchemy import MetaData
+
+db_uri = 'sqlite:///db.sqlite'
+engine = create_engine(db_uri)
+conn = engine.connect()
+
+meta = MetaData(engine).reflect()
+user_t = meta.tables['user']
+
+# select * from user_t
+sel_st = user_t.select()
+res = conn.execute(sel_st)
+for _row in res:
+    print(_row)
+
+# delete l_name == 'Hello'
+del_st = user_t.delete().where(
+      user_t.c.l_name == 'Hello')
+print('----- delete -----')
+res = conn.execute(del_st)
+
+# check rows has been delete
+sel_st = user_t.select()
+res = conn.execute(sel_st)
+for _row in res:
+    print(_row)
+```

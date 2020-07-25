@@ -7,12 +7,43 @@ from sqlalchemy import create_engine, func
 
 from flask import Flask, jsonify
 
+# SQLAlchemy
+from sqlalchemy import create_engine
+
+# Imports the methods needed to abstract classes into tables
+from sqlalchemy.ext.declarative import declarative_base
+
+# Allow us to declare column types
+from sqlalchemy import Table, Column, Integer, String, Float, MetaData
+
+#pandas for data manipulation and export
+import pandas as pd
+engine = create_engine('sqlite:///Dashboard.db', echo = True)
+Base = declarative_base()
+meta = MetaData()
+engine = create_engine("sqlite:///Internet_Data.db")
+base = automap_base()
+base.prepare(engine, reflect = True)
+table = base.classes.keys()
+print(table)
+
+
+
+
+
+
+
+
+
+
+
+
 
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///Dashboard.sqlite")
-
+#engine = create_engine("sqlite:///Dashboard.sqlite")
+engine = create_engine("sqlite:///Dashboard.db")
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
