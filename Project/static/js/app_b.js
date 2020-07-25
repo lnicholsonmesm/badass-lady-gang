@@ -11,9 +11,12 @@ var data = [trace1];
 
 var layout = {
   title: 'Marker Size',
-  showlegend: false,
-  height: 600,
-  width: 600
+  font: {
+    size: 18,
+    color: '#fff'},
+  showlegend: true,
+  plot_bgcolor:"transparent",
+  paper_bgcolor:"#2B3E50"
 };
 
 Plotly.newPlot('bubble', data, layout);
