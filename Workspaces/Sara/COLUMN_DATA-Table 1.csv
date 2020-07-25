@@ -1,0 +1,303 @@
+Code,,TableCode,ColumnCode,ColumnNumber,ColumnNumeric,ColumnLetter,ColumnTitle,
+DP02_0001E,,DP02,0001E,0001,1,E,E-HH_TYPE-Total households,HOUSEHOLDS BY TYPE
+DP02_0001PE,,DP02,0001PE,0001,1,PE,PE-HH_TYPE-Total households,HOUSEHOLDS BY TYPE
+DP02_0002E,,DP02,0002E,0002,2,E,E-HH_TYPE-Total households-Family households (families),HOUSEHOLDS BY TYPE
+DP02_0002PE,,DP02,0002PE,0002,2,PE,PE-HH_TYPE-Total households-Family households (families),HOUSEHOLDS BY TYPE
+DP02_0003E,,DP02,0003E,0003,3,E,E-HH_TYPE-Total households-Family households (families)-With own children of the householder under 18 years,HOUSEHOLDS BY TYPE
+DP02_0003PE,,DP02,0003PE,0003,3,PE,PE-HH_TYPE-Total households-Family households (families)-With own children of the householder under 18 years,HOUSEHOLDS BY TYPE
+DP02_0004E,,DP02,0004E,0004,4,E,E-HH_TYPE-Total households-Family households (families)-Married-couple family,HOUSEHOLDS BY TYPE
+DP02_0004PE,,DP02,0004PE,0004,4,PE,PE-HH_TYPE-Total households-Family households (families)-Married-couple family,HOUSEHOLDS BY TYPE
+DP02_0005E,,DP02,0005E,0005,5,E,E-HH_TYPE-Total households-Family households (families)-Married-couple family-With own children of the householder under 18 years,HOUSEHOLDS BY TYPE
+DP02_0005PE,,DP02,0005PE,0005,5,PE,PE-HH_TYPE-Total households-Family households (families)-Married-couple family-With own children of the householder under 18 years,HOUSEHOLDS BY TYPE
+DP02_0006E,,DP02,0006E,0006,6,E,"E-HH_TYPE-Total households-Family households (families)-Male householder, no wife present, family",HOUSEHOLDS BY TYPE
+DP02_0006PE,,DP02,0006PE,0006,6,PE,"PE-HH_TYPE-Total households-Family households (families)-Male householder, no wife present, family",HOUSEHOLDS BY TYPE
+DP02_0007E,,DP02,0007E,0007,7,E,"E-HH_TYPE-Total households-Family households (families)-Male householder, no wife present, family-With own children of the householder under 18 years",HOUSEHOLDS BY TYPE
+DP02_0007PE,,DP02,0007PE,0007,7,PE,"PE-HH_TYPE-Total households-Family households (families)-Male householder, no wife present, family-With own children of the householder under 18 years",HOUSEHOLDS BY TYPE
+DP02_0008E,,DP02,0008E,0008,8,E,"E-HH_TYPE-Total households-Family households (families)-Female householder, no husband present, family",HOUSEHOLDS BY TYPE
+DP02_0008PE,,DP02,0008PE,0008,8,PE,"PE-HH_TYPE-Total households-Family households (families)-Female householder, no husband present, family",HOUSEHOLDS BY TYPE
+DP02_0009E,,DP02,0009E,0009,9,E,"E-HH_TYPE-Total households-Family households (families)-Female householder, no husband present, family-With own children of the householder under 18 years",HOUSEHOLDS BY TYPE
+DP02_0009PE,,DP02,0009PE,0009,9,PE,"PE-HH_TYPE-Total households-Family households (families)-Female householder, no husband present, family-With own children of the householder under 18 years",HOUSEHOLDS BY TYPE
+DP02_0010E,,DP02,0010E,0010,10,E,E-HH_TYPE-Total households-Nonfamily households,HOUSEHOLDS BY TYPE
+DP02_0010PE,,DP02,0010PE,0010,10,PE,PE-HH_TYPE-Total households-Nonfamily households,HOUSEHOLDS BY TYPE
+DP02_0011E,,DP02,0011E,0011,11,E,E-HH_TYPE-Total households-Nonfamily households-Householder living alone,HOUSEHOLDS BY TYPE
+DP02_0011PE,,DP02,0011PE,0011,11,PE,PE-HH_TYPE-Total households-Nonfamily households-Householder living alone,HOUSEHOLDS BY TYPE
+DP02_0012E,,DP02,0012E,0012,12,E,E-HH_TYPE-Total households-Nonfamily households-Householder living alone-65 years and over,HOUSEHOLDS BY TYPE
+DP02_0012PE,,DP02,0012PE,0012,12,PE,PE-HH_TYPE-Total households-Nonfamily households-Householder living alone-65 years and over,HOUSEHOLDS BY TYPE
+DP02_0013E,,DP02,0013E,0013,13,E,E-HH_TYPE-Total households-Households with one or more people under 18 years,HOUSEHOLDS BY TYPE
+DP02_0013PE,,DP02,0013PE,0013,13,PE,PE-HH_TYPE-Total households-Households with one or more people under 18 years,HOUSEHOLDS BY TYPE
+DP02_0014E,,DP02,0014E,0014,14,E,E-HH_TYPE-Total households-Households with one or more people 65 years and over,HOUSEHOLDS BY TYPE
+DP02_0014PE,,DP02,0014PE,0014,14,PE,PE-HH_TYPE-Total households-Households with one or more people 65 years and over,HOUSEHOLDS BY TYPE
+DP02_0015E,,DP02,0015E,0015,15,E,E-HH_TYPE-Total households-Average household size,HOUSEHOLDS BY TYPE
+DP02_0015PE,,DP02,0015PE,0015,15,PE,PE-HH_TYPE-Total households-Average household size,HOUSEHOLDS BY TYPE
+DP02_0016E,,DP02,0016E,0016,16,E,E-HH_TYPE-Total households-Average family size,HOUSEHOLDS BY TYPE
+DP02_0016PE,,DP02,0016PE,0016,16,PE,PE-HH_TYPE-Total households-Average family size,HOUSEHOLDS BY TYPE
+DP02_0017E,,DP02,0017E,0017,17,E,E-REL-Population in households,RELATIONSHIP
+DP02_0017PE,,DP02,0017PE,0017,17,PE,PE-REL-Population in households,RELATIONSHIP
+DP02_0018E,,DP02,0018E,0018,18,E,E-REL-Population in households-Householder,RELATIONSHIP
+DP02_0018PE,,DP02,0018PE,0018,18,PE,PE-REL-Population in households-Householder,RELATIONSHIP
+DP02_0019E,,DP02,0019E,0019,19,E,E-REL-Population in households-Spouse,RELATIONSHIP
+DP02_0019PE,,DP02,0019PE,0019,19,PE,PE-REL-Population in households-Spouse,RELATIONSHIP
+DP02_0020E,,DP02,0020E,0020,20,E,E-REL-Population in households-Child,RELATIONSHIP
+DP02_0020PE,,DP02,0020PE,0020,20,PE,PE-REL-Population in households-Child,RELATIONSHIP
+DP02_0021E,,DP02,0021E,0021,21,E,E-REL-Population in households-Other relatives,RELATIONSHIP
+DP02_0021PE,,DP02,0021PE,0021,21,PE,PE-REL-Population in households-Other relatives,RELATIONSHIP
+DP02_0022E,,DP02,0022E,0022,22,E,E-REL-Population in households-Nonrelatives,RELATIONSHIP
+DP02_0022PE,,DP02,0022PE,0022,22,PE,PE-REL-Population in households-Nonrelatives,RELATIONSHIP
+DP02_0023E,,DP02,0023E,0023,23,E,E-REL-Population in households-Nonrelatives-Unmarried partner,RELATIONSHIP
+DP02_0023PE,,DP02,0023PE,0023,23,PE,PE-REL-Population in households-Nonrelatives-Unmarried partner,RELATIONSHIP
+DP02_0024E,,DP02,0024E,0024,24,E,E-MARITAL-Males 15 years and over,MARITAL STATUS
+DP02_0024PE,,DP02,0024PE,0024,24,PE,PE-MARITAL-Males 15 years and over,MARITAL STATUS
+DP02_0025E,,DP02,0025E,0025,25,E,E-MARITAL-Males 15 years and over-Never married,MARITAL STATUS
+DP02_0025PE,,DP02,0025PE,0025,25,PE,PE-MARITAL-Males 15 years and over-Never married,MARITAL STATUS
+DP02_0026E,,DP02,0026E,0026,26,E,"E-MARITAL-Males 15 years and over-Now married, except separated",MARITAL STATUS
+DP02_0026PE,,DP02,0026PE,0026,26,PE,"PE-MARITAL-Males 15 years and over-Now married, except separated",MARITAL STATUS
+DP02_0027E,,DP02,0027E,0027,27,E,E-MARITAL-Males 15 years and over-Separated,MARITAL STATUS
+DP02_0027PE,,DP02,0027PE,0027,27,PE,PE-MARITAL-Males 15 years and over-Separated,MARITAL STATUS
+DP02_0028E,,DP02,0028E,0028,28,E,E-MARITAL-Males 15 years and over-Widowed,MARITAL STATUS
+DP02_0028PE,,DP02,0028PE,0028,28,PE,PE-MARITAL-Males 15 years and over-Widowed,MARITAL STATUS
+DP02_0029E,,DP02,0029E,0029,29,E,E-MARITAL-Males 15 years and over-Divorced,MARITAL STATUS
+DP02_0029PE,,DP02,0029PE,0029,29,PE,PE-MARITAL-Males 15 years and over-Divorced,MARITAL STATUS
+DP02_0030E,,DP02,0030E,0030,30,E,E-MARITAL-Females 15 years and over,MARITAL STATUS
+DP02_0030PE,,DP02,0030PE,0030,30,PE,PE-MARITAL-Females 15 years and over,MARITAL STATUS
+DP02_0031E,,DP02,0031E,0031,31,E,E-MARITAL-Females 15 years and over-Never married,MARITAL STATUS
+DP02_0031PE,,DP02,0031PE,0031,31,PE,PE-MARITAL-Females 15 years and over-Never married,MARITAL STATUS
+DP02_0032E,,DP02,0032E,0032,32,E,"E-MARITAL-Females 15 years and over-Now married, except separated",MARITAL STATUS
+DP02_0032PE,,DP02,0032PE,0032,32,PE,"PE-MARITAL-Females 15 years and over-Now married, except separated",MARITAL STATUS
+DP02_0033E,,DP02,0033E,0033,33,E,E-MARITAL-Females 15 years and over-Separated,MARITAL STATUS
+DP02_0033PE,,DP02,0033PE,0033,33,PE,PE-MARITAL-Females 15 years and over-Separated,MARITAL STATUS
+DP02_0034E,,DP02,0034E,0034,34,E,E-MARITAL-Females 15 years and over-Widowed,MARITAL STATUS
+DP02_0034PE,,DP02,0034PE,0034,34,PE,PE-MARITAL-Females 15 years and over-Widowed,MARITAL STATUS
+DP02_0035E,,DP02,0035E,0035,35,E,E-MARITAL-Females 15 years and over-Divorced,MARITAL STATUS
+DP02_0035PE,,DP02,0035PE,0035,35,PE,PE-MARITAL-Females 15 years and over-Divorced,MARITAL STATUS
+DP02_0036E,,DP02,0036E,0036,36,E,E-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months,FERTILITY
+DP02_0036PE,,DP02,0036PE,0036,36,PE,PE-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months,FERTILITY
+DP02_0037E,,DP02,0037E,0037,37,E,"E-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Unmarried women (widowed, divorced, and never married)",FERTILITY
+DP02_0037PE,,DP02,0037PE,0037,37,PE,"PE-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Unmarried women (widowed, divorced, and never married)",FERTILITY
+DP02_0038E,,DP02,0038E,0038,38,E,"E-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Unmarried women (widowed, divorced, and never married)-Per 1,000 unmarried women",FERTILITY
+DP02_0038PE,,DP02,0038PE,0038,38,PE,"PE-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Unmarried women (widowed, divorced, and never married)-Per 1,000 unmarried women",FERTILITY
+DP02_0039E,,DP02,0039E,0039,39,E,"E-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 15 to 50 years old",FERTILITY
+DP02_0039PE,,DP02,0039PE,0039,39,PE,"PE-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 15 to 50 years old",FERTILITY
+DP02_0040E,,DP02,0040E,0040,40,E,"E-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 15 to 19 years old",FERTILITY
+DP02_0040PE,,DP02,0040PE,0040,40,PE,"PE-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 15 to 19 years old",FERTILITY
+DP02_0041E,,DP02,0041E,0041,41,E,"E-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 20 to 34 years old",FERTILITY
+DP02_0041PE,,DP02,0041PE,0041,41,PE,"PE-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 20 to 34 years old",FERTILITY
+DP02_0042E,,DP02,0042E,0042,42,E,"E-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 35 to 50 years old",FERTILITY
+DP02_0042PE,,DP02,0042PE,0042,42,PE,"PE-FERTIL-Number of women 15 to 50 years old who had a birth in the past 12 months-Per 1,000 women 35 to 50 years old",FERTILITY
+DP02_0043E,,DP02,0043E,0043,43,E,E-GNDPAR-Number of grandparents living with own grandchildren under 18 years,GRANDPARENTS
+DP02_0043PE,,DP02,0043PE,0043,43,PE,PE-GNDPAR-Number of grandparents living with own grandchildren under 18 years,GRANDPARENTS
+DP02_0044E,,DP02,0044E,0044,44,E,E-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Grandparents responsible for grandchildren,GRANDPARENTS
+DP02_0044PE,,DP02,0044PE,0044,44,PE,PE-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Grandparents responsible for grandchildren,GRANDPARENTS
+DP02_0045E,,DP02,0045E,0045,45,E,E-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-Less than 1 year,GRANDPARENTS
+DP02_0045PE,,DP02,0045PE,0045,45,PE,PE-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-Less than 1 year,GRANDPARENTS
+DP02_0046E,,DP02,0046E,0046,46,E,E-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-1 or 2 years,GRANDPARENTS
+DP02_0046PE,,DP02,0046PE,0046,46,PE,PE-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-1 or 2 years,GRANDPARENTS
+DP02_0047E,,DP02,0047E,0047,47,E,E-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-3 or 4 years,GRANDPARENTS
+DP02_0047PE,,DP02,0047PE,0047,47,PE,PE-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-3 or 4 years,GRANDPARENTS
+DP02_0048E,,DP02,0048E,0048,48,E,E-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-5 or more years,GRANDPARENTS
+DP02_0048PE,,DP02,0048PE,0048,48,PE,PE-GNDPAR-Number of grandparents living with own grandchildren under 18 years-Years responsible for grandchildren-5 or more years,GRANDPARENTS
+DP02_0049E,,DP02,0049E,0049,49,E,E-GNDPAR-Number of grandparents responsible for own grandchildren under 18 years,GRANDPARENTS
+DP02_0049PE,,DP02,0049PE,0049,49,PE,PE-GNDPAR-Number of grandparents responsible for own grandchildren under 18 years,GRANDPARENTS
+DP02_0050E,,DP02,0050E,0050,50,E,E-GNDPAR-Number of grandparents responsible for own grandchildren under 18 years-Who are female,GRANDPARENTS
+DP02_0050PE,,DP02,0050PE,0050,50,PE,PE-GNDPAR-Number of grandparents responsible for own grandchildren under 18 years-Who are female,GRANDPARENTS
+DP02_0051E,,DP02,0051E,0051,51,E,E-GNDPAR-Number of grandparents responsible for own grandchildren under 18 years-Who are married,GRANDPARENTS
+DP02_0051PE,,DP02,0051PE,0051,51,PE,PE-GNDPAR-Number of grandparents responsible for own grandchildren under 18 years-Who are married,GRANDPARENTS
+DP02_0052E,,DP02,0052E,0052,52,E,E-SCHOOLKIDS-Population 3 years and over enrolled in school,SCHOOL ENROLLMENT
+DP02_0052PE,,DP02,0052PE,0052,52,PE,PE-SCHOOLKIDS-Population 3 years and over enrolled in school,SCHOOL ENROLLMENT
+DP02_0053E,,DP02,0053E,0053,53,E,"E-SCHOOLKIDS-Population 3 years and over enrolled in school-Nursery school, preschool",SCHOOL ENROLLMENT
+DP02_0053PE,,DP02,0053PE,0053,53,PE,"PE-SCHOOLKIDS-Population 3 years and over enrolled in school-Nursery school, preschool",SCHOOL ENROLLMENT
+DP02_0054E,,DP02,0054E,0054,54,E,E-SCHOOLKIDS-Population 3 years and over enrolled in school-Kindergarten,SCHOOL ENROLLMENT
+DP02_0054PE,,DP02,0054PE,0054,54,PE,PE-SCHOOLKIDS-Population 3 years and over enrolled in school-Kindergarten,SCHOOL ENROLLMENT
+DP02_0055E,,DP02,0055E,0055,55,E,E-SCHOOLKIDS-Population 3 years and over enrolled in school-Elementary school (grades 1-8),SCHOOL ENROLLMENT
+DP02_0055PE,,DP02,0055PE,0055,55,PE,PE-SCHOOLKIDS-Population 3 years and over enrolled in school-Elementary school (grades 1-8),SCHOOL ENROLLMENT
+DP02_0056E,,DP02,0056E,0056,56,E,E-SCHOOLKIDS-Population 3 years and over enrolled in school-High school (grades 9-12),SCHOOL ENROLLMENT
+DP02_0056PE,,DP02,0056PE,0056,56,PE,PE-SCHOOLKIDS-Population 3 years and over enrolled in school-High school (grades 9-12),SCHOOL ENROLLMENT
+DP02_0057E,,DP02,0057E,0057,57,E,E-SCHOOLKIDS-Population 3 years and over enrolled in school-College or graduate school,SCHOOL ENROLLMENT
+DP02_0057PE,,DP02,0057PE,0057,57,PE,PE-SCHOOLKIDS-Population 3 years and over enrolled in school-College or graduate school,SCHOOL ENROLLMENT
+DP02_0058E,,DP02,0058E,0058,58,E,E-ED-Population 25 years and over,EDUCATIONAL ATTAINMENT
+DP02_0058PE,,DP02,0058PE,0058,58,PE,PE-ED-Population 25 years and over,EDUCATIONAL ATTAINMENT
+DP02_0059E,,DP02,0059E,0059,59,E,E-ED-Population 25 years and over-Less than 9th grade,EDUCATIONAL ATTAINMENT
+DP02_0059PE,,DP02,0059PE,0059,59,PE,PE-ED-Population 25 years and over-Less than 9th grade,EDUCATIONAL ATTAINMENT
+DP02_0060E,,DP02,0060E,0060,60,E,"E-ED-Population 25 years and over-9th to 12th grade, no diploma",EDUCATIONAL ATTAINMENT
+DP02_0060PE,,DP02,0060PE,0060,60,PE,"PE-ED-Population 25 years and over-9th to 12th grade, no diploma",EDUCATIONAL ATTAINMENT
+DP02_0061E,,DP02,0061E,0061,61,E,E-ED-Population 25 years and over-High school graduate (includes equivalency),EDUCATIONAL ATTAINMENT
+DP02_0061PE,,DP02,0061PE,0061,61,PE,PE-ED-Population 25 years and over-High school graduate (includes equivalency),EDUCATIONAL ATTAINMENT
+DP02_0062E,,DP02,0062E,0062,62,E,"E-ED-Population 25 years and over-Some college, no degree",EDUCATIONAL ATTAINMENT
+DP02_0062PE,,DP02,0062PE,0062,62,PE,"PE-ED-Population 25 years and over-Some college, no degree",EDUCATIONAL ATTAINMENT
+DP02_0063E,,DP02,0063E,0063,63,E,E-ED-Population 25 years and over-Associate's degree,EDUCATIONAL ATTAINMENT
+DP02_0063PE,,DP02,0063PE,0063,63,PE,PE-ED-Population 25 years and over-Associate's degree,EDUCATIONAL ATTAINMENT
+DP02_0064E,,DP02,0064E,0064,64,E,E-ED-Population 25 years and over-Bachelor's degree,EDUCATIONAL ATTAINMENT
+DP02_0064PE,,DP02,0064PE,0064,64,PE,PE-ED-Population 25 years and over-Bachelor's degree,EDUCATIONAL ATTAINMENT
+DP02_0065E,,DP02,0065E,0065,65,E,E-ED-Population 25 years and over-Graduate or professional degree,EDUCATIONAL ATTAINMENT
+DP02_0065PE,,DP02,0065PE,0065,65,PE,PE-ED-Population 25 years and over-Graduate or professional degree,EDUCATIONAL ATTAINMENT
+DP02_0066E,,DP02,0066E,0066,66,E,E-ED-Population 25 years and over-High school graduate or higher,EDUCATIONAL ATTAINMENT
+DP02_0066PE,,DP02,0066PE,0066,66,PE,PE-ED-Population 25 years and over-High school graduate or higher,EDUCATIONAL ATTAINMENT
+DP02_0067E,,DP02,0067E,0067,67,E,E-ED-Population 25 years and over-Bachelor's degree or higher,EDUCATIONAL ATTAINMENT
+DP02_0067PE,,DP02,0067PE,0067,67,PE,PE-ED-Population 25 years and over-Bachelor's degree or higher,EDUCATIONAL ATTAINMENT
+DP02_0068E,,DP02,0068E,0068,68,E,E-VETSTAT-Civilian population 18 years and over,VETERAN STATUS
+DP02_0068PE,,DP02,0068PE,0068,68,PE,PE-VETSTAT-Civilian population 18 years and over,VETERAN STATUS
+DP02_0069E,,DP02,0069E,0069,69,E,E-VETSTAT-Civilian population 18 years and over-Civilian veterans,VETERAN STATUS
+DP02_0069PE,,DP02,0069PE,0069,69,PE,PE-VETSTAT-Civilian population 18 years and over-Civilian veterans,VETERAN STATUS
+DP02_0070E,,DP02,0070E,0070,70,E,E-DISABILITY-Total Civilian Noninstitutionalized Population,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0070PE,,DP02,0070PE,0070,70,PE,PE-DISABILITY-Total Civilian Noninstitutionalized Population,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0071E,,DP02,0071E,0071,71,E,E-DISABILITY-Total Civilian Noninstitutionalized Population-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0071PE,,DP02,0071PE,0071,71,PE,PE-DISABILITY-Total Civilian Noninstitutionalized Population-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0072E,,DP02,0072E,0072,72,E,E-DISABILITY-Under 18 years,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0072PE,,DP02,0072PE,0072,72,PE,PE-DISABILITY-Under 18 years,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0073E,,DP02,0073E,0073,73,E,E-DISABILITY-Under 18 years-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0073PE,,DP02,0073PE,0073,73,PE,PE-DISABILITY-Under 18 years-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0074E,,DP02,0074E,0074,74,E,E-DISABILITY-18 to 64 years,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0074PE,,DP02,0074PE,0074,74,PE,PE-DISABILITY-18 to 64 years,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0075E,,DP02,0075E,0075,75,E,E-DISABILITY-18 to 64 years-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0075PE,,DP02,0075PE,0075,75,PE,PE-DISABILITY-18 to 64 years-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0076E,,DP02,0076E,0076,76,E,E-DISABILITY-65 years and over,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0076PE,,DP02,0076PE,0076,76,PE,PE-DISABILITY-65 years and over,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0077E,,DP02,0077E,0077,77,E,E-DISABILITY-65 years and over-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0077PE,,DP02,0077PE,0077,77,PE,PE-DISABILITY-65 years and over-With a disability,DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION
+DP02_0078E,,DP02,0078E,0078,78,E,E-RES 1 YEAR AGO-Population 1 year and over,RESIDENCE
+DP02_0078PE,,DP02,0078PE,0078,78,PE,PE-RES 1 YEAR AGO-Population 1 year and over,RESIDENCE
+DP02_0079E,,DP02,0079E,0079,79,E,E-RES 1 YEAR AGO-Population 1 year and over-Same house,RESIDENCE
+DP02_0079PE,,DP02,0079PE,0079,79,PE,PE-RES 1 YEAR AGO-Population 1 year and over-Same house,RESIDENCE
+DP02_0080E,,DP02,0080E,0080,80,E,E-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.,RESIDENCE
+DP02_0080PE,,DP02,0080PE,0080,80,PE,PE-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.,RESIDENCE
+DP02_0081E,,DP02,0081E,0081,81,E,E-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Same county,RESIDENCE
+DP02_0081PE,,DP02,0081PE,0081,81,PE,PE-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Same county,RESIDENCE
+DP02_0082E,,DP02,0082E,0082,82,E,E-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Different county,RESIDENCE
+DP02_0082PE,,DP02,0082PE,0082,82,PE,PE-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Different county,RESIDENCE
+DP02_0083E,,DP02,0083E,0083,83,E,E-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Different county-Same state,RESIDENCE
+DP02_0083PE,,DP02,0083PE,0083,83,PE,PE-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Different county-Same state,RESIDENCE
+DP02_0084E,,DP02,0084E,0084,84,E,E-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Different county-Different state,RESIDENCE
+DP02_0084PE,,DP02,0084PE,0084,84,PE,PE-RES 1 YEAR AGO-Population 1 year and over-Different house in the U.S.-Different county-Different state,RESIDENCE
+DP02_0085E,,DP02,0085E,0085,85,E,E-RES 1 YEAR AGO-Population 1 year and over-Abroad,RESIDENCE
+DP02_0085PE,,DP02,0085PE,0085,85,PE,PE-RES 1 YEAR AGO-Population 1 year and over-Abroad,RESIDENCE
+DP02_0086E,,DP02,0086E,0086,86,E,E-BIRTHPLACE-Total population,PLACE OF BIRTH
+DP02_0086PE,,DP02,0086PE,0086,86,PE,PE-BIRTHPLACE-Total population,PLACE OF BIRTH
+DP02_0087E,,DP02,0087E,0087,87,E,E-BIRTHPLACE-Total population-Native,PLACE OF BIRTH
+DP02_0087PE,,DP02,0087PE,0087,87,PE,PE-BIRTHPLACE-Total population-Native,PLACE OF BIRTH
+DP02_0088E,,DP02,0088E,0088,88,E,E-BIRTHPLACE-Total population-Native-Born in United States,PLACE OF BIRTH
+DP02_0088PE,,DP02,0088PE,0088,88,PE,PE-BIRTHPLACE-Total population-Native-Born in United States,PLACE OF BIRTH
+DP02_0089E,,DP02,0089E,0089,89,E,E-BIRTHPLACE-Total population-Native-Born in United States-State of residence,PLACE OF BIRTH
+DP02_0089PE,,DP02,0089PE,0089,89,PE,PE-BIRTHPLACE-Total population-Native-Born in United States-State of residence,PLACE OF BIRTH
+DP02_0090E,,DP02,0090E,0090,90,E,E-BIRTHPLACE-Total population-Native-Born in United States-Different state,PLACE OF BIRTH
+DP02_0090PE,,DP02,0090PE,0090,90,PE,PE-BIRTHPLACE-Total population-Native-Born in United States-Different state,PLACE OF BIRTH
+DP02_0091E,,DP02,0091E,0091,91,E,"E-BIRTHPLACE-Total population-Native-Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",PLACE OF BIRTH
+DP02_0091PE,,DP02,0091PE,0091,91,PE,"PE-BIRTHPLACE-Total population-Native-Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",PLACE OF BIRTH
+DP02_0092E,,DP02,0092E,0092,92,E,E-BIRTHPLACE-Total population-Foreign born,PLACE OF BIRTH
+DP02_0092PE,,DP02,0092PE,0092,92,PE,PE-BIRTHPLACE-Total population-Foreign born,PLACE OF BIRTH
+DP02_0093E,,DP02,0093E,0093,93,E,E-CITSTAT-Foreign-born population,U.S. CITIZENSHIP STATUS
+DP02_0093PE,,DP02,0093PE,0093,93,PE,PE-CITSTAT-Foreign-born population,U.S. CITIZENSHIP STATUS
+DP02_0094E,,DP02,0094E,0094,94,E,E-CITSTAT-Foreign-born population-Naturalized U.S. citizen,U.S. CITIZENSHIP STATUS
+DP02_0094PE,,DP02,0094PE,0094,94,PE,PE-CITSTAT-Foreign-born population-Naturalized U.S. citizen,U.S. CITIZENSHIP STATUS
+DP02_0095E,,DP02,0095E,0095,95,E,E-CITSTAT-Foreign-born population-Not a U.S. citizen,U.S. CITIZENSHIP STATUS
+DP02_0095PE,,DP02,0095PE,0095,95,PE,PE-CITSTAT-Foreign-born population-Not a U.S. citizen,U.S. CITIZENSHIP STATUS
+DP02_0096E,,DP02,0096E,0096,96,E,E-YEARENTERED-Population born outside the United States,YEAR OF ENTRY
+DP02_0096PE,,DP02,0096PE,0096,96,PE,PE-YEARENTERED-Population born outside the United States,YEAR OF ENTRY
+DP02_0097E,,DP02,0097E,0097,97,E,E-YEARENTERED-Population born outside the United States-Native,YEAR OF ENTRY
+DP02_0097PE,,DP02,0097PE,0097,97,PE,PE-YEARENTERED-Population born outside the United States-Native,YEAR OF ENTRY
+DP02_0098E,,DP02,0098E,0098,98,E,E-YEARENTERED-Population born outside the United States-Native-Entered 2010 or later,YEAR OF ENTRY
+DP02_0098PE,,DP02,0098PE,0098,98,PE,PE-YEARENTERED-Population born outside the United States-Native-Entered 2010 or later,YEAR OF ENTRY
+DP02_0099E,,DP02,0099E,0099,99,E,E-YEARENTERED-Population born outside the United States-Native-Entered before 2010,YEAR OF ENTRY
+DP02_0099PE,,DP02,0099PE,0099,99,PE,PE-YEARENTERED-Population born outside the United States-Native-Entered before 2010,YEAR OF ENTRY
+DP02_0100E,,DP02,0100E,0100,100,E,E-YEARENTERED-Population born outside the United States-Foreign born,YEAR OF ENTRY
+DP02_0100PE,,DP02,0100PE,0100,100,PE,PE-YEARENTERED-Population born outside the United States-Foreign born,YEAR OF ENTRY
+DP02_0101E,,DP02,0101E,0101,101,E,E-YEARENTERED-Population born outside the United States-Foreign born-Entered 2010 or later,YEAR OF ENTRY
+DP02_0101PE,,DP02,0101PE,0101,101,PE,PE-YEARENTERED-Population born outside the United States-Foreign born-Entered 2010 or later,YEAR OF ENTRY
+DP02_0102E,,DP02,0102E,0102,102,E,E-YEARENTERED-Population born outside the United States-Foreign born-Entered before 2010,YEAR OF ENTRY
+DP02_0102PE,,DP02,0102PE,0102,102,PE,PE-YEARENTERED-Population born outside the United States-Foreign born-Entered before 2010,YEAR OF ENTRY
+DP02_0103E,,DP02,0103E,0103,103,E,"E-REGIONBORN-Foreign-born population, excluding population born at sea",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0103PE,,DP02,0103PE,0103,103,PE,"PE-REGIONBORN-Foreign-born population, excluding population born at sea",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0104PE,,DP02,0104PE,0104,104,PE,"PE-REGIONBORN-Foreign-born population, excluding population born at sea-Europe",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0105E,,DP02,0105E,0105,105,E,"E-REGIONBORN-Foreign-born population, excluding population born at sea-Asia",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0105PE,,DP02,0105PE,0105,105,PE,"PE-REGIONBORN-Foreign-born population, excluding population born at sea-Asia",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0106E,,DP02,0106E,0106,106,E,"E-REGIONBORN-Foreign-born population, excluding population born at sea-Africa",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0106PE,,DP02,0106PE,0106,106,PE,"PE-REGIONBORN-Foreign-born population, excluding population born at sea-Africa",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0107E,,DP02,0107E,0107,107,E,"E-REGIONBORN-Foreign-born population, excluding population born at sea-Oceania",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0107PE,,DP02,0107PE,0107,107,PE,"PE-REGIONBORN-Foreign-born population, excluding population born at sea-Oceania",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0108E,,DP02,0108E,0108,108,E,"E-REGIONBORN-Foreign-born population, excluding population born at sea-Latin America",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0108PE,,DP02,0108PE,0108,108,PE,"PE-REGIONBORN-Foreign-born population, excluding population born at sea-Latin America",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0109E,,DP02,0109E,0109,109,E,"E-REGIONBORN-Foreign-born population, excluding population born at sea-Northern America",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0109PE,,DP02,0109PE,0109,109,PE,"PE-REGIONBORN-Foreign-born population, excluding population born at sea-Northern America",WORLD REGION OF BIRTH OF FOREIGN BORN
+DP02_0110E,,DP02,0110E,0110,110,E,E-HOMELANG-Population 5 years and over,LANGUAGE SPOKEN AT HOME
+DP02_0110PE,,DP02,0110PE,0110,110,PE,PE-HOMELANG-Population 5 years and over,LANGUAGE SPOKEN AT HOME
+DP02_0111E,,DP02,0111E,0111,111,E,E-HOMELANG-Population 5 years and over-English only,LANGUAGE SPOKEN AT HOME
+DP02_0111PE,,DP02,0111PE,0111,111,PE,PE-HOMELANG-Population 5 years and over-English only,LANGUAGE SPOKEN AT HOME
+DP02_0112E,,DP02,0112E,0112,112,E,E-HOMELANG-Population 5 years and over-Language other than English,LANGUAGE SPOKEN AT HOME
+DP02_0112PE,,DP02,0112PE,0112,112,PE,PE-HOMELANG-Population 5 years and over-Language other than English,LANGUAGE SPOKEN AT HOME
+DP02_0113E,,DP02,0113E,0113,113,E,"E-HOMELANG-Population 5 years and over-Language other than English-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0113PE,,DP02,0113PE,0113,113,PE,"PE-HOMELANG-Population 5 years and over-Language other than English-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0114E,,DP02,0114E,0114,114,E,E-HOMELANG-Population 5 years and over-Spanish,LANGUAGE SPOKEN AT HOME
+DP02_0114PE,,DP02,0114PE,0114,114,PE,PE-HOMELANG-Population 5 years and over-Spanish,LANGUAGE SPOKEN AT HOME
+DP02_0115E,,DP02,0115E,0115,115,E,"E-HOMELANG-Population 5 years and over-Spanish-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0115PE,,DP02,0115PE,0115,115,PE,"PE-HOMELANG-Population 5 years and over-Spanish-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0116E,,DP02,0116E,0116,116,E,E-HOMELANG-Population 5 years and over-Other Indo-European languages,LANGUAGE SPOKEN AT HOME
+DP02_0116PE,,DP02,0116PE,0116,116,PE,PE-HOMELANG-Population 5 years and over-Other Indo-European languages,LANGUAGE SPOKEN AT HOME
+DP02_0117E,,DP02,0117E,0117,117,E,"E-HOMELANG-Population 5 years and over-Other Indo-European languages-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0117PE,,DP02,0117PE,0117,117,PE,"PE-HOMELANG-Population 5 years and over-Other Indo-European languages-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0118E,,DP02,0118E,0118,118,E,E-HOMELANG-Population 5 years and over-Asian and Pacific Islander languages,LANGUAGE SPOKEN AT HOME
+DP02_0118PE,,DP02,0118PE,0118,118,PE,PE-HOMELANG-Population 5 years and over-Asian and Pacific Islander languages,LANGUAGE SPOKEN AT HOME
+DP02_0119E,,DP02,0119E,0119,119,E,"E-HOMELANG-Population 5 years and over-Asian and Pacific Islander languages-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0119PE,,DP02,0119PE,0119,119,PE,"PE-HOMELANG-Population 5 years and over-Asian and Pacific Islander languages-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0120E,,DP02,0120E,0120,120,E,E-HOMELANG-Population 5 years and over-Other languages,LANGUAGE SPOKEN AT HOME
+DP02_0120PE,,DP02,0120PE,0120,120,PE,PE-HOMELANG-Population 5 years and over-Other languages,LANGUAGE SPOKEN AT HOME
+DP02_0121E,,DP02,0121E,0121,121,E,"E-HOMELANG-Population 5 years and over-Other languages-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0121PE,,DP02,0121PE,0121,121,PE,"PE-HOMELANG-Population 5 years and over-Other languages-Speak English less than very well""""",LANGUAGE SPOKEN AT HOME
+DP02_0122E,,DP02,0122E,0122,122,E,E-ANC-Total population,ANCESTRY
+DP02_0122PE,,DP02,0122PE,0122,122,PE,PE-ANC-Total population,ANCESTRY
+DP02_0123E,,DP02,0123E,0123,123,E,E-ANC-Total population-American,ANCESTRY
+DP02_0123PE,,DP02,0123PE,0123,123,PE,PE-ANC-Total population-American,ANCESTRY
+DP02_0124E,,DP02,0124E,0124,124,E,E-ANC-Total population-Arab,ANCESTRY
+DP02_0124PE,,DP02,0124PE,0124,124,PE,PE-ANC-Total population-Arab,ANCESTRY
+DP02_0125E,,DP02,0125E,0125,125,E,E-ANC-Total population-Czech,ANCESTRY
+DP02_0125PE,,DP02,0125PE,0125,125,PE,PE-ANC-Total population-Czech,ANCESTRY
+DP02_0126E,,DP02,0126E,0126,126,E,E-ANC-Total population-Danish,ANCESTRY
+DP02_0126PE,,DP02,0126PE,0126,126,PE,PE-ANC-Total population-Danish,ANCESTRY
+DP02_0127E,,DP02,0127E,0127,127,E,E-ANC-Total population-Dutch,ANCESTRY
+DP02_0127PE,,DP02,0127PE,0127,127,PE,PE-ANC-Total population-Dutch,ANCESTRY
+DP02_0128E,,DP02,0128E,0128,128,E,E-ANC-Total population-English,ANCESTRY
+DP02_0128PE,,DP02,0128PE,0128,128,PE,PE-ANC-Total population-English,ANCESTRY
+DP02_0129E,,DP02,0129E,0129,129,E,E-ANC-Total population-French (except Basque),ANCESTRY
+DP02_0129PE,,DP02,0129PE,0129,129,PE,PE-ANC-Total population-French (except Basque),ANCESTRY
+DP02_0130E,,DP02,0130E,0130,130,E,E-ANC-Total population-French Canadian,ANCESTRY
+DP02_0130PE,,DP02,0130PE,0130,130,PE,PE-ANC-Total population-French Canadian,ANCESTRY
+DP02_0131PE,,DP02,0131PE,0131,131,PE,PE-ANC-Total population-German,ANCESTRY
+DP02_0132E,,DP02,0132E,0132,132,E,E-ANC-Total population-Greek,ANCESTRY
+DP02_0132PE,,DP02,0132PE,0132,132,PE,PE-ANC-Total population-Greek,ANCESTRY
+DP02_0133E,,DP02,0133E,0133,133,E,E-ANC-Total population-Hungarian,ANCESTRY
+DP02_0133PE,,DP02,0133PE,0133,133,PE,PE-ANC-Total population-Hungarian,ANCESTRY
+DP02_0134E,,DP02,0134E,0134,134,E,E-ANC-Total population-Irish,ANCESTRY
+DP02_0134PE,,DP02,0134PE,0134,134,PE,PE-ANC-Total population-Irish,ANCESTRY
+DP02_0135E,,DP02,0135E,0135,135,E,E-ANC-Total population-Italian,ANCESTRY
+DP02_0135PE,,DP02,0135PE,0135,135,PE,PE-ANC-Total population-Italian,ANCESTRY
+DP02_0136E,,DP02,0136E,0136,136,E,E-ANC-Total population-Lithuanian,ANCESTRY
+DP02_0136PE,,DP02,0136PE,0136,136,PE,PE-ANC-Total population-Lithuanian,ANCESTRY
+DP02_0137E,,DP02,0137E,0137,137,E,E-ANC-Total population-Norwegian,ANCESTRY
+DP02_0137PE,,DP02,0137PE,0137,137,PE,PE-ANC-Total population-Norwegian,ANCESTRY
+DP02_0138E,,DP02,0138E,0138,138,E,E-ANC-Total population-Polish,ANCESTRY
+DP02_0138PE,,DP02,0138PE,0138,138,PE,PE-ANC-Total population-Polish,ANCESTRY
+DP02_0139E,,DP02,0139E,0139,139,E,E-ANC-Total population-Portuguese,ANCESTRY
+DP02_0139PE,,DP02,0139PE,0139,139,PE,PE-ANC-Total population-Portuguese,ANCESTRY
+DP02_0140E,,DP02,0140E,0140,140,E,E-ANC-Total population-Russian,ANCESTRY
+DP02_0140PE,,DP02,0140PE,0140,140,PE,PE-ANC-Total population-Russian,ANCESTRY
+DP02_0141E,,DP02,0141E,0141,141,E,E-ANC-Total population-Scotch-Irish,ANCESTRY
+DP02_0141PE,,DP02,0141PE,0141,141,PE,PE-ANC-Total population-Scotch-Irish,ANCESTRY
+DP02_0142E,,DP02,0142E,0142,142,E,E-ANC-Total population-Scottish,ANCESTRY
+DP02_0142PE,,DP02,0142PE,0142,142,PE,PE-ANC-Total population-Scottish,ANCESTRY
+DP02_0143E,,DP02,0143E,0143,143,E,E-ANC-Total population-Slovak,ANCESTRY
+DP02_0143PE,,DP02,0143PE,0143,143,PE,PE-ANC-Total population-Slovak,ANCESTRY
+DP02_0144E,,DP02,0144E,0144,144,E,E-ANC-Total population-Subsaharan African,ANCESTRY
+DP02_0144PE,,DP02,0144PE,0144,144,PE,PE-ANC-Total population-Subsaharan African,ANCESTRY
+DP02_0145E,,DP02,0145E,0145,145,E,E-ANC-Total population-Swedish,ANCESTRY
+DP02_0145PE,,DP02,0145PE,0145,145,PE,PE-ANC-Total population-Swedish,ANCESTRY
+DP02_0146E,,DP02,0146E,0146,146,E,E-ANC-Total population-Swiss,ANCESTRY
+DP02_0146PE,,DP02,0146PE,0146,146,PE,PE-ANC-Total population-Swiss,ANCESTRY
+DP02_0147E,,DP02,0147E,0147,147,E,E-ANC-Total population-Ukrainian,ANCESTRY
+DP02_0147PE,,DP02,0147PE,0147,147,PE,PE-ANC-Total population-Ukrainian,ANCESTRY
+DP02_0148E,,DP02,0148E,0148,148,E,E-ANC-Total population-Welsh,ANCESTRY
+DP02_0148PE,,DP02,0148PE,0148,148,PE,PE-ANC-Total population-Welsh,ANCESTRY
+DP02_0149E,,DP02,0149E,0149,149,E,E-ANC-Total population-West Indian (excluding Hispanic origin groups),ANCESTRY
+DP02_0149PE,,DP02,0149PE,0149,149,PE,PE-ANC-Total population-West Indian (excluding Hispanic origin groups),ANCESTRY
+DP02_0150E,,DP02,0150E,0150,150,E,E-COMP_INT-Total households,COMPUTERS AND INTERNET USE
+DP02_0150PE,,DP02,0150PE,0150,150,PE,PE-COMP_INT-Total households,COMPUTERS AND INTERNET USE
+DP02_0151E,,DP02,0151E,0151,151,E,E-COMP_INT-Total households-With a computer,COMPUTERS AND INTERNET USE
+DP02_0151PE,,DP02,0151PE,0151,151,PE,PE-COMP_INT-Total households-With a computer,COMPUTERS AND INTERNET USE
+DP02_0152E,,DP02,0152E,0152,152,E,E-COMP_INT-Total households-With a broadband Internet subscription,COMPUTERS AND INTERNET USE
+DP02_0152PE,,DP02,0152PE,0152,152,PE,PE-COMP_INT-Total households-With a broadband Internet subscription,COMPUTERS AND INTERNET USE
