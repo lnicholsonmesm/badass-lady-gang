@@ -1,21 +1,19 @@
-google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['ID', 'X', 'Y', 'Temperature'],
-          ['',   80,  167,      120],
-          ['',   79,  136,      130],
-          ['',   78,  184,      50],
-          ['',   72,  278,      230],
-          ['',   81,  200,      210],
-          ['',   72,  170,      100],
-          ['',   68,  477,      80]
-        ]);
+var trace1 = {
+  x: [1, 2, 3, 4],
+  y: [10, 11, 12, 13],
+  mode: 'markers',
+  marker: {
+    size: [40, 60, 80, 100]
+  }
+};
 
-        var options = {
-          colorAxis: {colors: ['yellow', 'red']}
-        };
+var data = [trace1];
 
-        var chart = new google.visualization.BubbleChart(document.getElementById('bubble'));
-        chart.draw(data, options);
-      }
+var layout = {
+  title: 'Marker Size',
+  showlegend: false,
+  height: 600,
+  width: 600
+};
+
+Plotly.newPlot('bubble', data, layout);
