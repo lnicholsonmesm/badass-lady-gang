@@ -1,4 +1,4 @@
- //var geoData = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2010/41/tract.json";
+ //var tractData = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2010/41/tract.json";
  var geoData1 = "https://opendata.arcgis.com/datasets/e3320c8931b144aaa71eebec059ac5cd_0.geojson"
  //var geoData2 = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2018/41/tract.json";
 
@@ -33,14 +33,63 @@ var circle = L.circle([45.52, -122.67],{
     }).addTo(myMap);
 
 
-async function getData(){
-        const response = await fetch('/Internet_Data');
-        const data = await response.json()
-        for (item of data){
-                const marker = L.marker([item.lat, item.lon]).addTo(myMap);
-                const txt = `This is the information ${item.lat}; population is ${item.population}`;
-                marker.bindPopup(txt)
-        }
-        console.log(data)
-}
+// async function getData(){
+//         const response = await fetch('/api');
+//         const data = await response.json()
+//         for (item of data){
+//                 const marker = L.marker([item.lat, item.lon]).addTo(myMap);
+//                 const txt = `This is the information ${item.lat}; population is ${item.population}`;
+//                 marker.bindPopup(txt)
+//         }
+//         console.log(data)
+// }
 
+
+//heatmap #housholds that have internet access
+
+var heat = L.heatLayer([
+	[45.52, -125.67, 0.2], // lat, lng, intensity
+	[45.52, -120.67, 0.5],
+], {radius: 25}).addTo(myMap);
+
+
+// To include the plugin, just use leaflet-heat.js from the dist folder:
+// <script src="leaflet-heat.js"></script>
+
+
+
+
+// function buildPlot() {
+//   /* data route */
+//   const url = "/api/pals";
+//   d3.json(url).then(function(response) {
+
+//     console.log(response);
+
+//     const data = response;
+
+//     const layout = {
+//       scope: "usa",
+//       title: "Pet Pals",
+//       showlegend: false,
+//       height: 600,
+//             // width: 980,
+//       geo: {
+//         scope: "usa",
+//         projection: {
+//           type: "albers usa"
+//         },
+//         showland: true,
+//         landcolor: "rgb(217, 217, 217)",
+//         subunitwidth: 1,
+//         countrywidth: 1,
+//         subunitcolor: "rgb(255,255,255)",
+//         countrycolor: "rgb(255,255,255)"
+//       }
+//     };
+
+//     Plotly.newPlot("plot", data, layout);
+//   });
+// }
+
+// buildPlot();
