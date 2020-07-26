@@ -56,7 +56,13 @@ fcc = pd.read_csv("data/fcc_data.csv") #, na_values = ["-"]
 fcc = fcc.astype({"tract": "object"})
 
 #subset columns
-fcc_df = fcc[["dbaname","hocofinal","stateabbr","blockcode", "tract", "techcode","consumer","maxaddown","maxadup"]]
+fcc_subset = fcc[["dbaname","hocofinal","stateabbr","blockcode", "tract", "techcode","consumer","maxaddown","maxadup"]]
+
+#fcc_df
+region_subset = census_df[["CountyName", "Region", "Latitude", "Longitude", "fips_id"]]
+fcc_df = fcc_subset.merge(region_subset, how="left", left_on="tract", right_on="fips_id")
+fcc_df
+
 fcc_df
 dt = fcc_df.dtypes
 print(f"fcc dtypes: {dt}")
@@ -103,8 +109,8 @@ def fcc(region):
 #load race query
 from race_query import race_query, race_columns
 
-@app.route("/treemap/<region>/<race or ethnicity>")
-def treemap(region, enter_race_or_ethnicity):
+@app.route("/treemap/<region>/")
+def treemap(region):
     census = []
     results = engine.execute(race_query).fetchall()
     df = pd.DataFrame(results)
@@ -153,7 +159,8 @@ def treemap(region, enter_race_or_ethnicity):
 @app.route("/map/<region>")
 def map(region):
     census = []
-    mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census where Region = '{region}"
+    mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
+    # where Region = '{region}"
     results = engine.execute(mapquery)
     
     for row in results:
