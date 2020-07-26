@@ -1,13 +1,13 @@
- //var tractData = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2010/41/tract.json";
- var geoData1 = "https://opendata.arcgis.com/datasets/e3320c8931b144aaa71eebec059ac5cd_0.geojson"
- //var geoData2 = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2018/41/tract.json";
+var tractData = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2010/41/tract.json";
+// var geoData1 = "https://opendata.arcgis.com/datasets/e3320c8931b144aaa71eebec059ac5cd_0.geojson"
+//  //var geoData2 = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2018/41/tract.json";
 
-// Get data
-d3.json(geoData1, function(data) {
-        //console.log (data)
+//  //Get data
+d3.json(tractData, function(data) {
+         //console.log (data)
         L.geoJSON(data).addTo(myMap)
-        //createFeatures(data.features);
-    });
+//         //createFeatures(data.features);
+     });
 
     var myMap = L.map("map", {
         center: [45.52, -122.67],
@@ -24,13 +24,27 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
         accessToken: API_KEY
 }).addTo(myMap);
 
+//intensity = households
+var heat = L.heatLayer([
+	[45.52, -122.67, 500], // lat, lng, intensity
+	[45.52, -120.67, 0.5],
+	[47.52, -120.67, 0.5],
+	[43.52, -120.67, 0.5],
+	[44.52, -120.67, 0.5]
+], {radius: 35}).addTo(myMap);
 
-var circle = L.circle([45.52, -122.67],{
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 5000
-    }).addTo(myMap);
+
+
+
+
+
+
+// var circle = L.circle([45.52, -122.67],{
+//         color: 'red',
+//         fillColor: '#f03',
+//         fillOpacity: 0.5,
+//         radius: 5000
+//     }).addTo(myMap);
 
 
 // async function getData(){
@@ -47,10 +61,6 @@ var circle = L.circle([45.52, -122.67],{
 
 //heatmap #housholds that have internet access
 
-var heat = L.heatLayer([
-	[45.52, -125.67, 0.2], // lat, lng, intensity
-	[45.52, -120.67, 0.5],
-], {radius: 25}).addTo(myMap);
 
 
 // To include the plugin, just use leaflet-heat.js from the dist folder:
