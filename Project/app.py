@@ -96,7 +96,17 @@ engine = create_engine("sqlite:///db.sqlite")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    #return render_template("index.html")
+    return render_template("indextest.html")
+
+@app.route("/centralcoast/")
+def apitest():
+    return render_template("laura.html")
+
+@app.route("/northerncoast/")
+def apitesting():
+    return render_template("northerncoast.html")
+
 
 @app.route("/fcc/<region>")
 def fcc(region):
