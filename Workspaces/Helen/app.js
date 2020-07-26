@@ -1,39 +1,74 @@
-var tractData = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2010/41/tract.json";
-// var geoData1 = "https://opendata.arcgis.com/datasets/e3320c8931b144aaa71eebec059ac5cd_0.geojson"
-//  //var geoData2 = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2018/41/tract.json";
+//Get data from Flask App API call
+d3.json("/map/<region>", function(response){
+	console.log(response)
 
-//  //Get data
-d3.json(tractData, function(data) {
-         //console.log (data)
-        L.geoJSON(data).addTo(myMap)
-//         //createFeatures(data.features);
-     });
+//Define base map centered in Portland
+	    var myMap = L.map("map", {
+		        center: [45.52, -122.67],
+		        zoom: 7,
+		      });
+	
+//Add Tile Layer from Mapbox
+		L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
+		        attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+		        tileSize: 512,
+		        maxZoom: 18,
+		        zoomOffset: -1,
+		        id: "mapbox/streets-v11",
+		        accessToken: API_KEY
+		}).addTo(myMap);
 
-    var myMap = L.map("map", {
-        center: [45.52, -122.67],
-        zoom: 7,
-        //layers: [census]
-      });
+//Get Maxvalue for intensity using response and correct column "household"
+		householdData = response.map(track => track.has_computer_and_broadband)
+		maxValue = Math.max(has_computer_and_broadband)
 
-L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-        attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-        tileSize: 512,
-        maxZoom: 18,
-        zoomOffset: -1,
-        id: "mapbox/streets-v11",
-        accessToken: API_KEY
-}).addTo(myMap);
+
+//Function to get intensity based on number of housholds
+		//var max = 3000
+		function getIntensity(rawValue, maxValue){
+		var intensity = rawValue/maxValue
+		return intensity
+		}
+
+		//getIntensity(200,max)
+		
+//Get an array of the parametres that the heat layer requires: latitude, longitude, householdcount
+		var getHeatInfo = response.map(track => {return [track.latitude, track.longitude, getIntensity(track.has_computer_and_broadband, maxValue)]})
+
+//Add Heat Layer to map using the getHeatInfo array
+		var heat = L.heatLayer([
+			//[45.52, -122.67, 500], lat, lng, intensity
+			getHeatInfo], {radius: 35}).addTo(myMap);
+			//give it a gradient
+})	
+		
+
+		
+		
+		
+
+
+	// var tractData = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2010/41/tract.json";
+	// // var geoData1 = "https://opendata.arcgis.com/datasets/e3320c8931b144aaa71eebec059ac5cd_0.geojson"
+	// //  //var geoData2 = "https://raw.githubusercontent.com/loganpowell/census-geojson/master/GeoJSON/500k/2018/41/tract.json";
+
+	// //  //Get data
+	// d3.json(tractData, function(data) {
+	//         //console.log (data)
+	//         L.geoJSON(data).addTo(myMap)
+	// //         //createFeatures(data.features);
+	//     });
+
+
 
 //intensity = households
-var heat = L.heatLayer([
-	[45.52, -122.67, 500], // lat, lng, intensity
-	[45.52, -120.67, 0.5],
-	[47.52, -120.67, 0.5],
-	[43.52, -120.67, 0.5],
-	[44.52, -120.67, 0.5]
-], {radius: 35}).addTo(myMap);
+//find the max intesity, set it to 1
 
 
+
+
+
+//call the route in the url
 
 
 
