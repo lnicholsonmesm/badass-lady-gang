@@ -1,6 +1,6 @@
 //Get data from Flask App API call
-d3.json("/map/<region>", function(response){
-      console.log(response)
+d3.json("/map/region").then((response) => {
+      console.log(response);
   //Define base map centered in Portland
           var myMap = L.map("map-id", {
                   center: [45.52, -122.67],
@@ -16,6 +16,7 @@ d3.json("/map/<region>", function(response){
                   id: "mapbox/streets-v11",
                   accessToken: API_KEY
           }).addTo(myMap);
+
   //Get Maxvalue for intensity using response and correct column "household"
           householdData = response.map(track => track.has_computer_and_broadband)
           maxValue = Math.max(has_computer_and_broadband)
