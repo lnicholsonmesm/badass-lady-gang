@@ -46,16 +46,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Reset data <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Reset data <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Northern Coast
+                    <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        onchange="optionChanged(this.value)" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Regions in Oregon
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Northern Coast</a>
-                        <a class="dropdown-item" href="#">Central Coast</a>
+                    <div class="dropdown-menu" id="region" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="northerncoast">Northern Coast</a>
+                        <a class="dropdown-item" href="centralcoast">Central Coast</a>
                         <a class="dropdown-item" href="#">Portland Metro Area</a>
                         <a class="dropdown-item" href="#">Willamette Valley</a>
                         <a class="dropdown-item" href="#">Southern Oregon</a>
@@ -92,11 +93,13 @@
     </div>
 
     <!-- D3 cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
     <!-- Leaflet JS-->
     <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
         integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
         crossorigin=""></script>
+    <!-- Leaflet Heatmap Plugin -->
+    <script src="leaflet-heat.js"></script>
     <!-- d3 JavaScript -->
     <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
 
@@ -110,9 +113,7 @@
     <script type="text/javascript" src="../static/js/logic.js"></script>
 
 
-    {% for item in mapdata %}
-    {{ item }}
-    {% endfor %}
+
 </body>
 
 </html>
