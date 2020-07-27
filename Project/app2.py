@@ -96,17 +96,78 @@ engine = create_engine("sqlite:///db.sqlite")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
-    #return render_template("indextest.html")
+    #return render_template("index.html")
+    return render_template("laura.html")
 
-@app.route("/<region>")
-def region(region):
-    return render_template("index.html", region = region)
+@app.route("//")
+def apitest():
+    return render_template("laura.html")
 
-@app.route("/<region>/happy")
-def apitest(region):
+@app.route("/northerncoast/")
+def apitesting():
+    return render_template("northerncoast.html")
+
+
+@app.route("/fcc/<region>")
+def fcc(region):
+    query = "SELECT * FROM fcc" #Where Region = '{region}' -- need to add to df
+    results = engine.execute(race_query).fetchall()
+    dictionary = {"data": results}
+    return jsonify(dictionary)
+  
+
+#load race query
+from race_query import race_query, race_columns
+
+@app.route("/treemap/<region>/")
+def treemap(region):
     census = []
-    mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census where Region = '{region}'"
+    results = engine.execute(race_query).fetchall()
+    df = pd.DataFrame(results)
+    df.columns = race_columns
+    data_frame = df.groupby("Region").sum()
+
+    # E_Computer_Broadband_Households
+    # E_Computer_NoInternet_Households
+    #NoComputer_Households
+    
+    arrays = [["Race", None]
+        ,["White","Race"]
+        ,["With Computer, White", "White"]
+        ,["No Computer, White", "White"]
+        ,["With Internet", "With Computer, White"]
+        ,["American Indian or Alaska Native","Race"]
+        ,["With Computer, Indigenous", "American Indian or Alaska Native"]
+        ,["No Computer, Indigenous", "American Indian or Alaska Native"]
+        ,["With Internet", "With Computer, Indigenous"]
+        ,["Asian","Race"]
+        ,["With Computer, Asian", "Asian"]
+        ,["No Computer, Asian", "Asian"]
+        ,["With Internet", "With Computer, Asian"]
+        ,["Native Hawaiian/Other Pacific Islander", "Race"]
+        ,["Other", "Race"]
+        ,["Two or more Races", "Race"]]
+    for x in range(length(arrays)):
+        arrays[x].append(data_frame.iloc[0,x])
+    js = jsonify(arrays)
+    return js
+    #{"latitude": row[0]}
+    #census.append(mydict)
+        #if upper(enter_race_or_ethnicity) == "RACE" then:
+        #where = "race"
+    #OnlyWhite = []
+    #census = {
+    #    ""
+    #}
+    #mapdata =jsonify(census)
+    #return mapdata
+
+
+@app.route("/map/<region>")
+def map(region):
+    census = []
+    mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
+    # where Region = '{region}"
     results = engine.execute(mapquery)
     
     for row in results:
@@ -122,141 +183,25 @@ def apitest(region):
         census.append(mydict)
        
     return jsonify(census)
+    #return redirect("/", code=302)
 
-
-@app.route("/fcc/<region>")
-def fcc(region):
-    query = "SELECT dbaname, maxaddown, region, service_count = count(consumer)  FROM fcc Where Region = '{region}' and consumer = 1 GROUP BY dbaname, Region"
-    results = engine.execute(race_query)
-
-    for result in results:
-        data = {
-             "dbaname": result[0],
-        "service_count": result[3],
-        "maxaddown": result[1],
-        "region": result[2]
+@app.route("/region2")
+def map2():
+    query = "SELECT Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
+    results = engine.execute(query)
+    mapdata = []
+    for row in results:
+        datadict = {
+            "latitude": row[0],
+            "longitude": row[1],
+            "region": row[2],
+            "county": row[3],
+            "fips_id": row[4],
+            "pct_ComputerAndBroadband": row[5],
+            "ComputerAndBroadband": row[6]
         }
-    #"dbaname","hocofinal","stateabbr","blockcode", "tract", "techcode",
-    #"consumer","maxaddown","maxadup"]]
-    return jsonify(data)
-
-
-##def region(sample):
-    # Filter the data based on the sample number and
-    # only keep rows with values above 1
-   # sample_data = df.loc[df[sample] > 1, ["hocofinal", "consumer", "maxaddown"]
-    # Sort by sample
-  #  sample_data.sort_values(by=sample, ascending=False, inplace=True)
-    # Format the data to send as json
-    
-  #  return jsonify(data)
-    # query = f"SELECT * FROM census Where Region = '{region}'"
-    # results = engine.execute(query).fetchall()
-    # dictionary = {"data": results}
-    # return jsonify(dictionary)
-
-    #return render_template("laura.html")
-
-# @app.route("/northerncoast/")
-# def apitesting():
-#     return render_template("northerncoast.html")
-
-
-
-  
-
-# #load race query
-# from race_query import race_query, race_columns
-
-# @app.route("/treemap/<region>/")
-# def treemap(region):
-#     census = []
-#     results = engine.execute(race_query).fetchall()
-#     df = pd.DataFrame(results)
-#     df.columns = race_columns
-#     data_frame = df.groupby("Region").sum()
-    '''
-    # E_Computer_Broadband_Households
-    # E_Computer_NoInternet_Households
-    #NoComputer_Households
-
-    ["race", none, data_frame.iloc[0,0]] 
-    for x in range.length()
-    [
-        ["Race", None,0],
-
-        ["White","Race",0],
-        ["With Computer, White", "White", 0]
-        ["No Computer, White", "White", 0]
-        ["With Internet", "With Computer, White", 0]
-
-        ["American Indian or Alaska Native","Race",0],
-        ["With Computer, Indigenous", "American Indian or Alaska Native", 0]
-        ["No Computer, Indigenous", "American Indian or Alaska Native", 0]
-        ["With Internet", "With Computer, Indigenous", 0]
-
-        ["Asian","Race",0],
-        ["With Computer, Asian", "Asian", 0]
-        ["No Computer, Asian", "Asian", 0]
-        ["With Internet", "With Computer, Asian", 0]
-
-        
-        ["Native Hawaiian/Other Pacific Islander", "Race", 0],
-        ["Other", "Race", 0],
-        ["Two or more Races", "Race", 0]
-    ]
-    '''
-    #{"latitude": row[0]}
-    #census.append(mydict)
-        #if upper(enter_race_or_ethnicity) == "RACE" then:
-        #where = "race"
-    #OnlyWhite = []
-    #census = {
-    #    ""
-    #}
-    #mapdata =jsonify(census)
-    #return mapdata
-
-
-# @app.route("/map/<region>")
-# def map(region):
-#     census = []
-#     mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
-#     # where Region = '{region}"
-#     results = engine.execute(mapquery)
-    
-#     for row in results:
-#         mydict = {
-#             "latitude": row[0], 
-#             "longitude": row[1],
-#             "region": row[2],
-#             "county": row[3],
-#             "tract": row[4],
-#             "pct_has_computer_and_broadband": row[5],
-#             "has_computer_and_broadband": row[6]
-#             } #{"latitude": row[0]}
-#         census.append(mydict)
-       
-#     return jsonify(census)
-#     #return redirect("/", code=302)
-
-# @app.route("/region2")
-# def map2():
-#     query = "SELECT Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
-#     results = engine.execute(query)
-#     mapdata = []
-#     for row in results:
-#         datadict = {
-#             "latitude": row[0],
-#             "longitude": row[1],
-#             "region": row[2],
-#             "county": row[3],
-#             "fips_id": row[4],
-#             "pct_ComputerAndBroadband": row[5],
-#             "ComputerAndBroadband": row[6]
-#         }
-#         mapdata.append(datadict)
-#     return jsonify(mapdata)
+        mapdata.append(datadict)
+    return jsonify(mapdata)
 
 if __name__ == "__main__":
     app.run()
