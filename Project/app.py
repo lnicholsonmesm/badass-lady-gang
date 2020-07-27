@@ -96,40 +96,71 @@ engine = create_engine("sqlite:///db.sqlite")
 
 @app.route("/")
 def home():
-    #return render_template("index.html")
-    return render_template("indextest.html")
+    return render_template("index.html")
+    #return render_template("indextest.html")
 
-@app.route("/centralcoast/")
-def apitest():
-    return render_template("laura.html")
+@app.route("/<region>")
+def region(region):
+    return render_template("index.html", region = region)
 
-@app.route("/northerncoast/")
-def apitesting():
-    return render_template("northerncoast.html")
+@app.route("/<region>/happy")
+def apitest(region):
+    census = []
+    mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census where Region = '{region}'"
+    results = engine.execute(mapquery)
+    
+    for row in results:
+        mydict = {
+            "latitude": row[0], 
+            "longitude": row[1],
+            "region": row[2],
+            "county": row[3],
+            "tract": row[4],
+            "pct_has_computer_and_broadband": row[5],
+            "has_computer_and_broadband": row[6]
+            } #{"latitude": row[0]}
+        census.append(mydict)
+       
+    return jsonify(census)
 
 
-@app.route("/fcc/<region>")
-def fcc(region):
-    query = "SELECT * FROM fcc" #Where Region = '{region}' -- need to add to df
-    results = engine.execute(race_query).fetchall()
-    dictionary = {"data": results}
-    return jsonify(dictionary)
+    # query = f"SELECT * FROM census Where Region = '{region}'"
+    # results = engine.execute(query).fetchall()
+    # dictionary = {"data": results}
+    # return jsonify(dictionary)
+
+    #return render_template("laura.html")
+
+# @app.route("/northerncoast/")
+# def apitesting():
+#     return render_template("northerncoast.html")
+
+
+# @app.route("/fcc/<region>")
+# def fcc(region):
+#     query = "SELECT * FROM fcc" #Where Region = '{region}' -- need to add to df
+#     results = engine.execute(race_query).fetchall()
+#     dictionary = {"data": results}
+#     return jsonify(dictionary)
   
 
-#load race query
-from race_query import race_query, race_columns
+# #load race query
+# from race_query import race_query, race_columns
 
-@app.route("/treemap/<region>/")
-def treemap(region):
-    census = []
-    results = engine.execute(race_query).fetchall()
-    df = pd.DataFrame(results)
-    df.columns = race_columns
-    data_frame = df.groupby("Region").sum()
+# @app.route("/treemap/<region>/")
+# def treemap(region):
+#     census = []
+#     results = engine.execute(race_query).fetchall()
+#     df = pd.DataFrame(results)
+#     df.columns = race_columns
+#     data_frame = df.groupby("Region").sum()
     '''
     # E_Computer_Broadband_Households
     # E_Computer_NoInternet_Households
     #NoComputer_Households
+
+    ["race", none, data_frame.iloc[0,0]] 
+    for x in range.length()
     [
         ["Race", None,0],
 
@@ -166,45 +197,45 @@ def treemap(region):
     #return mapdata
 
 
-@app.route("/map/<region>")
-def map(region):
-    census = []
-    mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
-    # where Region = '{region}"
-    results = engine.execute(mapquery)
+# @app.route("/map/<region>")
+# def map(region):
+#     census = []
+#     mapquery = f"select Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
+#     # where Region = '{region}"
+#     results = engine.execute(mapquery)
     
-    for row in results:
-        mydict = {
-            "latitude": row[0], 
-            "longitude": row[1],
-            "region": row[2],
-            "county": row[3],
-            "tract": row[4],
-            "pct_has_computer_and_broadband": row[5],
-            "has_computer_and_broadband": row[6]
-            } #{"latitude": row[0]}
-        census.append(mydict)
+#     for row in results:
+#         mydict = {
+#             "latitude": row[0], 
+#             "longitude": row[1],
+#             "region": row[2],
+#             "county": row[3],
+#             "tract": row[4],
+#             "pct_has_computer_and_broadband": row[5],
+#             "has_computer_and_broadband": row[6]
+#             } #{"latitude": row[0]}
+#         census.append(mydict)
        
-    return jsonify(census)
-    #return redirect("/", code=302)
+#     return jsonify(census)
+#     #return redirect("/", code=302)
 
-@app.route("/region2")
-def map2():
-    query = "SELECT Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
-    results = engine.execute(query)
-    mapdata = []
-    for row in results:
-        datadict = {
-            "latitude": row[0],
-            "longitude": row[1],
-            "region": row[2],
-            "county": row[3],
-            "fips_id": row[4],
-            "pct_ComputerAndBroadband": row[5],
-            "ComputerAndBroadband": row[6]
-        }
-        mapdata.append(datadict)
-    return jsonify(mapdata)
+# @app.route("/region2")
+# def map2():
+#     query = "SELECT Latitude, Longitude, Region, county_name, fips_id, PE_Computer_Broadband_Household, E_Computer_Broadband_Household FROM census"
+#     results = engine.execute(query)
+#     mapdata = []
+#     for row in results:
+#         datadict = {
+#             "latitude": row[0],
+#             "longitude": row[1],
+#             "region": row[2],
+#             "county": row[3],
+#             "fips_id": row[4],
+#             "pct_ComputerAndBroadband": row[5],
+#             "ComputerAndBroadband": row[6]
+#         }
+#         mapdata.append(datadict)
+#     return jsonify(mapdata)
 
 if __name__ == "__main__":
     app.run()
