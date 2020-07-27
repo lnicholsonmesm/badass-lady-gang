@@ -13,7 +13,7 @@ var test = d3.select("#navbarDropdown").node().value;
 d3.selectAll("#navbarDropdown").on("change", console.log(test));
 
 
-d3.json("/map/region").then((response) => {
+d3.json("/<region>/happy").then((response) => {
   console.log(response);
   //Define base map centered in Portland
   var myMap = L.map("map-id", {

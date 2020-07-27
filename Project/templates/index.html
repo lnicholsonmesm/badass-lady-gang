@@ -51,17 +51,12 @@
         <li class="nav-item dropdown">
           <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             onchange="optionChanged(this.value)" aria-haspopup="true" aria-expanded="false">
-            Regions in Oregon
+            Select a Region
           </a>
           <div class="dropdown-menu" id="region" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="">Northern Coast</a>
-            <a class="dropdown-item" href="#">Central Coast</a>
-            <a class="dropdown-item" href="#">Portland Metro Area</a>
-            <a class="dropdown-item" href="#">Willamette Valley</a>
-            <a class="dropdown-item" href="#">Southern Oregon</a>
-            <a class="dropdown-item" href="#">Columbia River George</a>
+            <a class="dropdown-item" href="/northwest">Northwest Oregon</a>
+            <a class="dropdown-item" href="/southwest">Southwest Oregon</a>
             <a class="dropdown-item" href="#">Central Oregon</a>
-            <a class="dropdown-item" href="#">Eastern Oregon</a>
           </div>
         </li>
       </ul>
@@ -78,6 +73,9 @@
       <h4>Access to Internet per Capita</h4>
       <div id="map-id"></div>
     </div>
+
+    <div id={{Region}}></div>
+    
     <br>
     <div class="col-md-6 text-center">
       <h4>Racial distribution of Internet Use</h4>
