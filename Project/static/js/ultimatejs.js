@@ -1,12 +1,12 @@
 function optionChanged(val) {
     var region = val;
-    drawChart(region);
+    drawCharts(region);
     buildCharts(region);
-    barChart(region)
+    barCharts(region)
 };
-//google.charts.load('current', { 'packages': ['corechart'] });
-//google.charts.setOnLoadCallback(drawChart);
-function drawChart(region) {
+
+// PIE CHART
+function drawCharts(region) {
     d3.json(`/treemap/${region}`).then((response) => {
         //console.log(response);
         var data = response;
@@ -17,57 +17,21 @@ function drawChart(region) {
             width: 500
         };
         Plotly.newPlot('treemap', data, layout);
+    })};
 
-        /////////////////////////////////////////////////////////
-        // data = response;
-        // // race = data.map(row => row.values);
-        // // y = data.map(row => row)
-        // //internet_per_capita = data.map(row => row.race_something);
-        // //add a filter for each race?
-        // console.log(data[0]["values"]);
-        // var trace1 = {
-        //     x: data[0]["labels"],
-        //     y: data[0]["values"],
-        //     type: 'bar',
-        //     //orientation: "v"
-        // };
-        // var barData = [trace1];
-        // var layout = {
-        //     //plot_bgcolor: "blue",
-        //     paper_bgcolor: "#2B3E50",
-        //     font: { color: '#fff' },
-        //     title: "Distribution of Internet access by Race",
-        //     margin: {
-        //         l: 100,
-        //         r: 100,
-        //         t: 100,
-        //         b: 100
-        //     },
-        //     font: { color: '#fff' },
-        // };
-        // Plotly.newPlot('bubble', barData, layout);
-    });}
+//BAR CHART
 
-//drawChart("northwest");
+// google.charts.load('current', {packages: ['corechart', 'bar']});
+// google.charts.setOnLoadCallback(barChart);
 
-function barChart(region) {
+function barCharts(region) {
     d3.json(`/bar/${region}`).then((response) => {
-        /////////////////////////////////////////////////////////
-        data = response;
-        // race = data.map(row => row.values);
-        // y = data.map(row => row)
-        //internet_per_capita = data.map(row => row.race_something);
-        //add a filter for each race?
-        console.log(data[0]["values"]);
-        var trace1 = {
-            x: data[0]["labels"],
-            y: data[0]["values"],
-            type: 'bar',
-            //orientation: "v"
-        };
+            /////////////////////////////////////////////////////////
+            console.log(response);
+        var trace1 = response;
         var barData = [trace1];
         var layout = {
-            plot_bgcolor: "transparent",
+            plot_bgcolor: "blue",
             paper_bgcolor: "#2B3E50",
             font: { color: '#fff' },
             title: "Distribution of Internet access by Race",
@@ -76,14 +40,57 @@ function barChart(region) {
                 r: 100,
                 t: 100,
                 b: 100
-            },
-            font: { color: '#fff' },
-        };
+                },
+            };
         Plotly.newPlot('bubble', barData, layout);
-    });
-}
+        })
+    };
+//     var jsonData = $.ajax({
+//         url: "/bar/<region>/",
+//         dataType: "json",
+//         async: false
+//         }).responseText;
+          
+//     // Create our data table out of JSON data loaded from server.
+//     var data = new google.visualization.DataTable(jsonData);
 
-//drawChart("northwest");
+//     // var options = {
+//     //     title: 'Population of Largest U.S. Cities',
+//     //     chartArea: {width: '70%'},
+//     //     hAxis: {
+//     //       title: 'Internet Access',
+//     //       minValue: 0,
+//     //       textStyle: {
+//     //         bold: true,
+//     //         fontSize: 12,
+//     //         color: '#4d4d4d'
+//     //       },
+//     //       titleTextStyle: {
+//     //         bold: true,
+//     //         fontSize: 18,
+//     //         color: '#4d4d4d'
+//     //       }
+//     //     },
+//     //     vAxis: {
+//     //       title: 'Per Household',
+//     //       textStyle: {
+//     //         fontSize: 14,
+//     //         bold: true,
+//     //         color: '#848484'
+//     //       },
+//     //       titleTextStyle: {
+//     //         fontSize: 14,
+//     //         bold: true,
+//     //         color: '#848484'
+//     //       }
+//     //     }
+//     //   };
+//       var chart = new google.visualization.BarChart(document.getElementById('bubble'));
+//       chart.draw(data);
+    // }
+
+
+// //drawChart("northwest");
 
 
 async function buildCharts(region) {

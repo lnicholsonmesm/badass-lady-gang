@@ -298,11 +298,11 @@ def bar(region='northwest'):
     # other_per = [x/y for x, y in zip(other_int, other)]
     # two_plus_per = [x/y for x, y in zip(two_plus_int, two_plus)]
 
-    bar_data = {
-        "x": labels,
-        "y": [sum(white_int)*100/sum(white), sum(native_int)*100/sum(native), sum(black_int)*100/sum(black), sum(asian_int)*100/sum(asian), sum(hawaiian_int)*100/sum(hawaiian), sum(other_int)*100/sum(other),sum(two_plus_int)*100/sum(two_plus)],
+    bar_data = [{
+        "labels": labels,
+        "values": [sum(white_int)/sum(white), sum(native_int)/sum(native), sum(black_int)/sum(black), sum(asian_int)/sum(asian), sum(hawaiian_int)/sum(hawaiian), sum(other_int)/sum(other),sum(two_plus_int)/sum(two_plus)],
         "type": "bar"
-    }
+    }]
     return jsonify(bar_data)
 
 
