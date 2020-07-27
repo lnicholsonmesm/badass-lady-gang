@@ -1,4 +1,4 @@
-S2802
+ S2802
 TYPES OF INTERNET SUBSCRIPTIONS BY SELECTED CHARACTERISTICS
 In 2016, changes were made to the computer and Internet use questions, involving the wording as well as the response options. A crosswalk was used to map pre-2016 data to the post-2016 categories, enabling creation of 5-year data. For more detailed information about the 2016 changes, see the 2016 American Community Survey Content Test Report for Computer and Internet Use located at 
 <a href="https://www.census.gov/programs-surveys/acs/methodology/content-test.html" xmlns="http://www.thedataweb.org/aggregateDisplay">https://www.census.gov/programs-surveys/acs/methodology/content-test.htm</a>
