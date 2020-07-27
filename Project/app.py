@@ -53,15 +53,15 @@ census_df.iloc[0,10:50]
 print(census_df.E_Computer_Broadband_Household)
 #________*_________*_________*_________*_________*_________*_________*_________*
 #Get FCC
-fcc = pd.read_csv("data/fcc_data.csv") #, na_values = ["-"]
-fcc = fcc.astype({"tract": "object"})
+fcc = pd.read_csv("data/fcc_region_broadband_bySpeed.csv") #, na_values = ["-"]
+#fcc = fcc.astype({"tract": "object"})
 
 #subset columns
-fcc_subset = fcc[["dbaname","hocofinal","stateabbr","blockcode", "tract", "techcode","consumer","maxaddown","maxadup"]]
+fcc_subset = fcc[["DBAName","MaxAdvertisedDownstreamSpeed","MaxAdvertisedUpstreamSpeed","Region", "CountServiceAvailablebyRegionAndCompanyAndDLspeed"]]
 
 #fcc_df
 region_subset = census_df[["CountyName", "Region", "Latitude", "Longitude", "fips_id"]]
-fcc_df = fcc_subset.merge(region_subset, how="left", left_on="tract", right_on="fips_id")
+fcc_df = fcc_subset.merge(region_subset, how="left", left_on="Region", right_on="Region")
 fcc_df
 
 fcc_df
@@ -76,8 +76,8 @@ census_df.to_sql("census", con=engine, if_exists="replace", index_label=None)
 fcc_df.to_sql("fcc_version1", con=engine, if_exists="replace", index_label=None)
 
 #this one is not really needed:
-fcc_by_tract = pd.read_csv("data/fcc_bytract.csv")
-fcc_by_tract.to_sql("fcc_tracts",  con=engine, if_exists="replace", index_label=None)
+#fcc_by_tract = pd.read_csv("data/fcc_bytract.csv")
+#fcc_by_tract.to_sql("fcc_tracts",  con=engine, if_exists="replace", index_label=None)
 #________*_________*_________*_________*_________*_________*_________*_________*
 #________*_________*_________*_________*_________*_________*_________*_________*
 filtered_fcc = pd.read_csv("data/fcc_region_broadband_bySpeed.csv")
@@ -147,28 +147,28 @@ def fcc(region):
     #print(fcc_df_qry[11])
     
     fcc = []
-    dbaname = []
-    service_count = []
-    maxaddown = []
-    maxadupload = []
-    region = []
+    DBAName = []  
+    CountServiceAvailablebyRegionAndCompanyAndDLspeed = []
+    MaxAdvertisedDownstreamSpeed = []
+    MaxAdvertisedUpstreamSpeed = []
+    Region = []
     for result in results:
         #print(result[11])
-       # if result[11]==region:
+       if result[5]==region:
             #print(result)
-        dbaname.append(result[1])
-        maxaddown.append(result[2])
-        maxadupload.append(result[3])
-        region.append(result[5])
+        DBAName.append(result[1])
+        MaxAdvertisedDownstreamSpeed.append(result[2])
+        MaxAdvertisedUpstreamSpeed.append(result[3])
+        Region.append(result[5])
        # service_count.append(result[7] if result[7] == 1 else 0)
-        service_count.append(result[6])
+        CountServiceAvailablebyRegionAndCompanyAndDLspeed.append(result[6])
 
     fcc_dictionary = {
-        "dbaname": dbaname,
-        'maxaddown': maxaddown,
-        'maxadupload': maxadupload,
-        'region': region,
-        "service_count": service_count,
+        "dbaname": DBAName,
+        'maxaddown': MaxAdvertisedDownstreamSpeed,
+        'maxadupload': MaxAdvertisedUpstreamSpeed,
+        'region': Region,
+        "service_count": CountServiceAvailablebyRegionAndCompanyAndDLspeed,
                         }        
     #"dbaname","hocofinal","stateabbr","blockcode", "tract", "techcode",
     #"consumer","maxaddown","maxadup"]]

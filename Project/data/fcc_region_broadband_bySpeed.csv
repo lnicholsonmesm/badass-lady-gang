@@ -1,4 +1,4 @@
-DBA Name,Max Advertised Downstream Speed (mbps),Max Advertised Upstream Speed (mbps),state,Region,CountServiceAvailablebyRegionAndCompanyAndDLspeed
+DBAName,MaxAdvertisedDownstreamSpeed,MaxAdvertisedUpstreamSpeed,state,Region,CountServiceAvailablebyRegionAndCompanyAndDLspeed
 "600Amps Internet Services, Inc.",100,100,Oregon,southwest,54
 "Alyrica Networks, Inc.",40,5,Oregon,northwest,18276
 "Alyrica Networks, Inc.",1000,1000,Oregon,northwest,41
