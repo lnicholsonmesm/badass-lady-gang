@@ -124,6 +124,32 @@ def apitest(region):
     return jsonify(census)
 
 
+@app.route("/fcc/<region>")
+def fcc(region):
+    query = "SELECT dbaname, maxaddown, region, service_count = count(consumer)  FROM fcc Where Region = '{region}' and consumer = 1 GROUP BY dbaname, Region"
+    results = engine.execute(race_query)
+
+    for result in results:
+        data = {
+             "dbaname": result[0],
+        "service_count": result[3],
+        "maxaddown": result[1],
+        "region": result[2]
+        }
+    #"dbaname","hocofinal","stateabbr","blockcode", "tract", "techcode",
+    #"consumer","maxaddown","maxadup"]]
+    return jsonify(data)
+
+
+##def region(sample):
+    # Filter the data based on the sample number and
+    # only keep rows with values above 1
+   # sample_data = df.loc[df[sample] > 1, ["hocofinal", "consumer", "maxaddown"]
+    # Sort by sample
+  #  sample_data.sort_values(by=sample, ascending=False, inplace=True)
+    # Format the data to send as json
+    
+  #  return jsonify(data)
     # query = f"SELECT * FROM census Where Region = '{region}'"
     # results = engine.execute(query).fetchall()
     # dictionary = {"data": results}
@@ -136,12 +162,7 @@ def apitest(region):
 #     return render_template("northerncoast.html")
 
 
-# @app.route("/fcc/<region>")
-# def fcc(region):
-#     query = "SELECT * FROM fcc" #Where Region = '{region}' -- need to add to df
-#     results = engine.execute(race_query).fetchall()
-#     dictionary = {"data": results}
-#     return jsonify(dictionary)
+
   
 
 # #load race query
