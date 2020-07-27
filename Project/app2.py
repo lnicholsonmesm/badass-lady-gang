@@ -315,3 +315,38 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     app.run()
+     .fetchall()
+     df = pd.DataFrame(results)
+     df.columns = race_columns
+     data_frame = df.groupby("Region").sum()
+    '''
+    # E_Computer_Broadband_Households
+    # E_Computer_NoInternet_Households
+    #NoComputer_Households
+
+    ["race", none, data_frame.iloc[0,0]] 
+    for x in range.length()
+
+
+    [
+        ["Race", None,0],
+
+        ["White","Race",0],
+        ["With Computer, White", "White", 0]
+        ["No Computer, White", "White", 0]
+        ["With Internet", "With Computer, White", 0]
+
+        ["American Indian or Alaska Native","Race",0],
+        ["With Computer, Indigenous", "American Indian or Alaska Native", 0]
+        ["No Computer, Indigenous", "American Indian or Alaska Native", 0]
+        ["With Internet", "With Computer, Indigenous", 0]
+
+        ["Asian","Race",0],
+        ["With Computer, Asian", "Asian", 0]
+        ["No Computer, Asian", "Asian", 0]
+        ["With Internet", "With Computer, Asian", 0]
+
+        ["Native Hawaiian/Other Pacific Islander", "Race", 0],
+        ["Other", "Race", 0],
+        ["Two or more Races", "Race", 0]
+    ]
