@@ -51,20 +51,18 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Northern Coast
+                        Select Region
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Northern Coast</a>
-                        <a class="dropdown-item" href="#">Central Coast</a>
-                        <a class="dropdown-item" href="#">Portland Metro Area</a>
-                        <a class="dropdown-item" href="#">Willamette Valley</a>
-                        <a class="dropdown-item" href="#">Southern Oregon</a>
-                        <a class="dropdown-item" href="#">Columbia River George</a>
-                        <a class="dropdown-item" href="#">Central Oregon</a>
-                        <a class="dropdown-item" href="#">Eastern Oregon</a>
-                    </div>
-                </li>
-            </ul>
+                    <!--<div class="dropdown-menu" id="getRegion" aria-labelledby="navbarDropdown">-->
+                    <select id="getRegion" onchange="optionChanged(this.value)">
+                        <option>Oregon</option>
+                        <option>Northwest</option>
+                        <option>Southwest</option>
+                        <option>East</option>
+                    </select>
+        </div>
+        </li>
+        </ul>
         </div>
     </nav>
 
@@ -107,7 +105,7 @@
     <!-- Our JavaScript -->
     <script type="text/javascript" src="../static/js/app.js"></script>
     <script type="text/javascript" src="../static/js/app_b.js"></script>
-    <script type="text/javascript" src="../static/js/logic.js"></script>
+    <script type="text/javascript" src="../static/js/logi2c.js"></script>
 
 
     {% for item in mapdata %}
