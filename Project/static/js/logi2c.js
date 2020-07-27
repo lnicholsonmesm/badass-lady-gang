@@ -1,8 +1,8 @@
 //Get data from Flask App API call
 function optionChanged(val) {
-    var subjectID = val;
-    console.log(subjectID);
-    //plotGraph(subjectID);
+    var Region = val;
+    console.log(Region);
+    //plotGraph(Region);
 };
 /*
 var selector = d3.select("#selDataset");
@@ -19,45 +19,52 @@ d3.selectAll("#region").on("change", console.log(selector));
 var test = d3.select("#navbarDropdown").node().value;
 d3.selectAll("#navbarDropdown").on("change", console.log(test));
 
+function optionChanged(val) {
+    var Region = val;
+    console.log(Region);
 
-d3.json("/map/region").then((response) => {
-    console.log(response);
-    //Define base map centered in Portland
-    var myMap = L.map("map-id", {
-        center: [45.52, -122.67],
-        zoom: 7,
-    });
+    function plotGraph(Region) {
+        var url = "/map/" & Region //concatenate so we have the url
+        d3.json(url).then((response) => {
+            console.log(response);
+            //Define base map centered in Portland
+            var myMap = L.map("map-id", {
+                center: [45.52, -122.67],
+                zoom: 7,
+            });
 
-    //Add Tile Layer from Mapbox
-    L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-        attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-        tileSize: 512,
-        maxZoom: 18,
-        zoomOffset: -1,
-        id: "mapbox/streets-v11",
-        accessToken: API_KEY
-    }).addTo(myMap);
+            //Add Tile Layer from Mapbox
+            L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
+                attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+                tileSize: 512,
+                maxZoom: 18,
+                zoomOffset: -1,
+                id: "mapbox/streets-v11",
+                accessToken: API_KEY
+            }).addTo(myMap);
 
-    //Get Maxvalue for intensity using response and correct column "household"
-    householdData = response.map(track => track.has_computer_and_broadband)
-    maxValue = Math.max(has_computer_and_broadband)
+            //Get Maxvalue for intensity using response and correct column "household"
+            householdData = response.map(track => track.has_computer_and_broadband)
+            maxValue = Math.max(has_computer_and_broadband)
 
-    //Function to get intensity based on number of housholds
-    //var max = 3000
-    function getIntensity(rawValue, maxValue) {
-        var intensity = rawValue / maxValue
-        return intensity
+            //Function to get intensity based on number of housholds
+            //var max = 3000
+            function getIntensity(rawValue, maxValue) {
+                var intensity = rawValue / maxValue
+                return intensity
+            }
+            //getIntensity(200,max)
+
+            //Get an array of the parametres that the heat layer requires: latitude, longitude, householdcount
+            var getHeatInfo = response.map(track => { return [track.latitude, track.longitude, getIntensity(track.has_computer_and_broadband, maxValue)] })
+            //Add Heat Layer to map using the getHeatInfo array
+            var heat = L.heatLayer([
+                //[45.52, -122.67, 500], lat, lng, intensity
+                getHeatInfo], { radius: 35 }).addTo(myMap);
+            //give it a gradient
+        })
     }
-    //getIntensity(200,max)
 
-    //Get an array of the parametres that the heat layer requires: latitude, longitude, householdcount
-    var getHeatInfo = response.map(track => { return [track.latitude, track.longitude, getIntensity(track.has_computer_and_broadband, maxValue)] })
-    //Add Heat Layer to map using the getHeatInfo array
-    var heat = L.heatLayer([
-        //[45.52, -122.67, 500], lat, lng, intensity
-        getHeatInfo], { radius: 35 }).addTo(myMap);
-    //give it a gradient
-})
 
 
 
