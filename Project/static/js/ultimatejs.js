@@ -27,11 +27,11 @@ function drawCharts(region) {
 function barCharts(region) {
     d3.json(`/bar/${region}`).then((response) => {
             /////////////////////////////////////////////////////////
-            //console.log(data[0]["values"]);
+            console.log(response);
         var trace1 = response;
         var barData = [trace1];
         var layout = {
-            plot_bgcolor: "transparent",
+            plot_bgcolor: "blue",
             paper_bgcolor: "#2B3E50",
             font: { color: '#fff' },
             title: "Distribution of Internet access by Race",
