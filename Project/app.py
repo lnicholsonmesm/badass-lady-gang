@@ -205,7 +205,7 @@ from race_query import race_query, race_columns, pie_query
 @app.route("/treemap/<string:region>/")
 def treemap(region='northwest'):
     
-    #print(race_query.format(region))
+    print(race_query.format(region))
     results = engine.execute(pie_query.format(region))
     white = []
     native = []
@@ -214,6 +214,13 @@ def treemap(region='northwest'):
     hawaiian = []
     other = []
     two_plus = []
+    # white_int = []
+    # native_int = []
+    # black_int= []
+    # asian_int = []
+    # hawaiian_int = []
+    # other_int = []
+    # two_plus_int = []
     labels = ['white','native','black','asian','hawaiian','other','two_plus']
     for row in results:
         white.append(row[0])
@@ -222,7 +229,14 @@ def treemap(region='northwest'):
         asian.append(row[3])
         hawaiian.append(row[4])
         other.append(row[5])
-        two_plus.append(row[6]) #,
+        two_plus.append(row[6])
+        # white_int.append(row[8])
+        # native_int.append(row[9])
+        # black_int.append(row[10])
+        # asian_int.append(row[11])
+        # hawaiian_int.append(row[12])
+        # other_int.append(row[13])
+        # two_plus_int.append(row[14]) 
             #"_ci" : row[7],
             # "wci" : row[8],
             # "nci" : row[9],
@@ -256,6 +270,82 @@ def treemap(region='northwest'):
         "type": "pie"
     }]
     return jsonify(pie_data)
+
+    # #load race query
+from race_query import race_query, race_columns, pie_query
+
+@app.route("/bar/<string:region>/")
+def bar(region='northwest'):
+    
+    #print(race_query.format(region))
+    results = engine.execute(pie_query.format(region))
+    white = []
+    native = []
+    black = []
+    asian = []
+    hawaiian = []
+    other = []
+    two_plus = []
+    white_int = []
+    native_int = []
+    black_int= []
+    asian_int = []
+    hawaiian_int = []
+    other_int = []
+    two_plus_int = []
+    labels = ['white','native','black','asian','hawaiian','other','two_plus']
+    for row in results:
+        white.append(row[0])
+        native.append(row[1])
+        black.append(row[2])
+        asian.append(row[3])
+        hawaiian.append(row[4])
+        other.append(row[5])
+        two_plus.append(row[6])
+        white_int.append(row[8])
+        native_int.append(row[9])
+        black_int.append(row[10])
+        asian_int.append(row[11])
+        hawaiian_int.append(row[12])
+        other_int.append(row[13])
+        two_plus_int.append(row[14])
+    
+    # white_int_sum = sum(white_int)
+    # native_int_sum = sum(native_int)
+    # black_int_sum = sum(black_int)
+    # asian_int_sum = sum(asian_int)
+    # hawaiian_int_sum = sum(hawaiian_int)
+    # other_int_sum = sum(other_int)
+    # two_plus_int_sum = sum(two_plus_int_sum)
+
+    print(white_int/white)
+
+    # from __future__ import division
+    # white_per = []
+    # native_per = []
+    # black_per= []
+    # asian_per = []
+    # hawaiian_per = []
+    # other_per = []
+    # two_plus_per = []
+
+
+    # white_per = [x/y for x, y in zip(white_int, white)]
+    # native_per = [x/y for x, y in zip(native_int, native)]
+    # black_per = [x/y for x, y in zip(black_int, black)]
+    # asian_per = [x/y for x, y in zip(asian_int, asian)]
+    # hawaiian_per = [x/y for x, y in zip(hawaiian_int, hawaiian)]
+    # other_per = [x/y for x, y in zip(other_int, other)]
+    # two_plus_per = [x/y for x, y in zip(two_plus_int, two_plus)]
+
+    bar_data = [{
+        "labels": labels,
+        "values": [sum(white_int)/sum(white), sum(native_int)/sum(native), sum(black_int)/sum(black), sum(asian_int)/sum(asian), sum(hawaiian_int)/sum(hawaiian), sum(other_int)/sum(other),sum(two_plus_int)/sum(two_plus)],
+        "type": "bar"
+    }]
+    return jsonify(bar_data)
+
+    #print(jsonify(bar_data))
 
     #{"latitude": row[0]}
     #census.append(mydict)

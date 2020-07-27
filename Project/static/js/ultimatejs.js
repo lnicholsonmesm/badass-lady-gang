@@ -2,6 +2,7 @@ function optionChanged(val) {
     var region = val;
     drawChart(region);
     buildCharts(region);
+    barChart(region)
 };
 //google.charts.load('current', { 'packages': ['corechart'] });
 //google.charts.setOnLoadCallback(drawChart);
@@ -18,6 +19,40 @@ function drawChart(region) {
         Plotly.newPlot('treemap', data, layout);
 
         /////////////////////////////////////////////////////////
+        // data = response;
+        // // race = data.map(row => row.values);
+        // // y = data.map(row => row)
+        // //internet_per_capita = data.map(row => row.race_something);
+        // //add a filter for each race?
+        // console.log(data[0]["values"]);
+        // var trace1 = {
+        //     x: data[0]["labels"],
+        //     y: data[0]["values"],
+        //     type: 'bar',
+        //     //orientation: "v"
+        // };
+        // var barData = [trace1];
+        // var layout = {
+        //     //plot_bgcolor: "blue",
+        //     paper_bgcolor: "#2B3E50",
+        //     font: { color: '#fff' },
+        //     title: "Distribution of Internet access by Race",
+        //     margin: {
+        //         l: 100,
+        //         r: 100,
+        //         t: 100,
+        //         b: 100
+        //     },
+        //     font: { color: '#fff' },
+        // };
+        // Plotly.newPlot('bubble', barData, layout);
+    });}
+
+//drawChart("northwest");
+
+function barChart(region) {
+    d3.json(`/bar/${region}`).then((response) => {
+        /////////////////////////////////////////////////////////
         data = response;
         // race = data.map(row => row.values);
         // y = data.map(row => row)
@@ -32,7 +67,7 @@ function drawChart(region) {
         };
         var barData = [trace1];
         var layout = {
-            //plot_bgcolor: "blue",
+            plot_bgcolor: "transparent",
             paper_bgcolor: "#2B3E50",
             font: { color: '#fff' },
             title: "Distribution of Internet access by Race",
@@ -48,7 +83,7 @@ function drawChart(region) {
     });
 }
 
-drawChart("northwest");
+//drawChart("northwest");
 
 
 async function buildCharts(region) {
