@@ -120,6 +120,18 @@ async function buildCharts(region) {
 
         let bubble_layout = {
             title: "What kind of Internet is accessible in each Region?",
+            yaxis:{
+                title: {
+                    text: 'Max download speed (mbps)'
+                },
+                font: {
+                    size: 18,
+                    color: '#fff'
+                },
+                showlegend: true,
+                plot_bgcolor: "transparent",
+                paper_bgcolor: "#2B3E50"
+            },
             xaxis: {
                 title: {
                     text: 'Providers'

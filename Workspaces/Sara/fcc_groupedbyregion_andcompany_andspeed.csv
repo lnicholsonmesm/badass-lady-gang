@@ -1,0 +1,649 @@
+DBAName,MaxAdvertisedDownstreamSpeed,MaxAdvertisedUpstreamSpeed,state,Region,CountServiceAvailablebyRegionAndCompany
+"600Amps Internet Services, Inc.",100,100,Oregon,southwest,3
+"Alyrica Networks, Inc.",20,5,Oregon,northwest,16
+"Alyrica Networks, Inc.",40,5,Oregon,northwest,150
+"Alyrica Networks, Inc.",1000,1000,Oregon,northwest,1
+Azure Standard,6,2,Oregon,east,1
+Azure Standard,25,10,Oregon,east,1
+Azure Standard,40,10,Oregon,east,1
+Beavercreek Cooperative Telephone Company,15,1,Oregon,northwest,10
+Beavercreek Cooperative Telephone Company,20,5,Oregon,northwest,4
+Beavercreek Cooperative Telephone Company,100,5,Oregon,northwest,7
+BendBroadband,100,10,Oregon,east,12
+BendBroadband,600,20,Oregon,east,52
+BendBroadband,600,20,Oregon,southwest,2
+"Blackfoot Communications, Inc.",3,3,Oregon,northwest,1
+"Blackfoot Communications, Inc.",5,5,Oregon,northwest,1
+"Blackfoot Communications, Inc.",10,10,Oregon,east,3
+"Blackfoot Communications, Inc.",10,10,Oregon,northwest,2
+"Blackfoot Communications, Inc.",10,10,Oregon,southwest,1
+"Blackfoot Communications, Inc.",20,20,Oregon,northwest,1
+"Blackfoot Communications, Inc.",50,50,Oregon,northwest,1
+Blue Mountain Digital,1.5,1.5,Oregon,east,1
+Cable ONE,1000,50,Oregon,east,6
+Cal-Ore Communications Inc.,1.5,0.768,Oregon,southwest,2
+Cal-Ore Communications Inc.,4,1,Oregon,southwest,1
+Cal-Ore Communications Inc.,10,1,Oregon,southwest,16
+Cal-Ore Communications Inc.,25,3,Oregon,southwest,2
+Cal-Ore Communications Inc.,50,4,Oregon,southwest,13
+Cascade Utilities,3,1,Oregon,northwest,1
+Cascade Utilities,6,1,Oregon,east,4
+Cascade Utilities,6,1,Oregon,northwest,6
+Cascade Utilities,6,1,Oregon,southwest,2
+Cascade Utilities,9,1,Oregon,east,3
+Cascade Utilities,9,1,Oregon,northwest,6
+Cascade Utilities,9,1,Oregon,southwest,3
+Cascade Utilities,12,1,Oregon,east,5
+Cascade Utilities,12,1,Oregon,northwest,11
+Cascade Utilities,12,1,Oregon,southwest,3
+Cascade Utilities,100,50,Oregon,east,2
+Cascade Utilities,100,50,Oregon,northwest,9
+Cascade Utilities,100,50,Oregon,southwest,3
+CenturyLink,0.256,0.128,Oregon,east,2
+CenturyLink,0.256,0.128,Oregon,northwest,2
+CenturyLink,0.256,0.128,Oregon,southwest,5
+CenturyLink,0.256,0.256,Oregon,east,28
+CenturyLink,0.256,0.256,Oregon,northwest,159
+CenturyLink,0.256,0.256,Oregon,southwest,35
+CenturyLink,0.512,0.128,Oregon,east,3
+CenturyLink,0.512,0.128,Oregon,northwest,2
+CenturyLink,0.512,0.256,Oregon,east,19
+CenturyLink,0.512,0.256,Oregon,northwest,26
+CenturyLink,0.512,0.256,Oregon,southwest,21
+CenturyLink,0.64,0.256,Oregon,northwest,1
+CenturyLink,0.768,0.256,Oregon,east,4
+CenturyLink,0.768,0.256,Oregon,northwest,17
+CenturyLink,0.768,0.256,Oregon,southwest,5
+CenturyLink,1.5,0.256,Oregon,east,12
+CenturyLink,1.5,0.256,Oregon,northwest,18
+CenturyLink,1.5,0.256,Oregon,southwest,17
+CenturyLink,1.5,0.512,Oregon,east,30
+CenturyLink,1.5,0.512,Oregon,northwest,72
+CenturyLink,1.5,0.512,Oregon,southwest,36
+CenturyLink,1.5,0.896,Oregon,east,110
+CenturyLink,1.5,0.896,Oregon,northwest,476
+CenturyLink,1.5,0.896,Oregon,southwest,118
+CenturyLink,1.5,1,Oregon,east,5
+CenturyLink,1.5,1,Oregon,northwest,100
+CenturyLink,1.5,1,Oregon,southwest,2
+CenturyLink,3,0.512,Oregon,east,38
+CenturyLink,3,0.512,Oregon,northwest,93
+CenturyLink,3,0.512,Oregon,southwest,39
+CenturyLink,3,0.64,Oregon,east,65
+CenturyLink,3,0.64,Oregon,northwest,385
+CenturyLink,3,0.64,Oregon,southwest,40
+CenturyLink,4,0.512,Oregon,east,9
+CenturyLink,4,0.512,Oregon,northwest,30
+CenturyLink,4,0.512,Oregon,southwest,12
+CenturyLink,4,1,Oregon,east,24
+CenturyLink,4,1,Oregon,northwest,97
+CenturyLink,4,1,Oregon,southwest,70
+CenturyLink,5,0.768,Oregon,east,1
+CenturyLink,5,0.768,Oregon,northwest,4
+CenturyLink,5,0.768,Oregon,southwest,5
+CenturyLink,5,0.896,Oregon,east,62
+CenturyLink,5,0.896,Oregon,northwest,295
+CenturyLink,5,0.896,Oregon,southwest,66
+CenturyLink,6,0.512,Oregon,east,21
+CenturyLink,6,0.512,Oregon,northwest,71
+CenturyLink,6,0.512,Oregon,southwest,26
+CenturyLink,7,0.896,Oregon,east,53
+CenturyLink,7,0.896,Oregon,northwest,314
+CenturyLink,7,0.896,Oregon,southwest,36
+CenturyLink,7,2,Oregon,northwest,4
+CenturyLink,7,2,Oregon,southwest,2
+CenturyLink,7,5,Oregon,northwest,7
+CenturyLink,8,0.768,Oregon,east,18
+CenturyLink,8,0.768,Oregon,northwest,36
+CenturyLink,8,0.768,Oregon,southwest,16
+CenturyLink,10,0.768,Oregon,east,29
+CenturyLink,10,0.768,Oregon,northwest,87
+CenturyLink,10,0.768,Oregon,southwest,36
+CenturyLink,10,0.896,Oregon,east,1
+CenturyLink,10,0.896,Oregon,northwest,4
+CenturyLink,10,1,Oregon,east,125
+CenturyLink,10,1,Oregon,northwest,487
+CenturyLink,10,1,Oregon,southwest,129
+CenturyLink,12,0.896,Oregon,east,126
+CenturyLink,12,0.896,Oregon,northwest,719
+CenturyLink,12,0.896,Oregon,southwest,116
+CenturyLink,12,1.5,Oregon,northwest,1
+CenturyLink,12,2,Oregon,east,29
+CenturyLink,12,2,Oregon,northwest,81
+CenturyLink,12,2,Oregon,southwest,16
+CenturyLink,12,5,Oregon,east,4
+CenturyLink,12,5,Oregon,northwest,25
+CenturyLink,12,5,Oregon,southwest,2
+CenturyLink,15,0.768,Oregon,east,21
+CenturyLink,15,0.768,Oregon,northwest,52
+CenturyLink,15,0.768,Oregon,southwest,29
+CenturyLink,15,1.5,Oregon,east,4
+CenturyLink,15,1.5,Oregon,northwest,5
+CenturyLink,15,1.5,Oregon,southwest,1
+CenturyLink,18,1.5,Oregon,northwest,1
+CenturyLink,20,0.896,Oregon,east,67
+CenturyLink,20,0.896,Oregon,northwest,470
+CenturyLink,20,0.896,Oregon,southwest,71
+CenturyLink,20,1.5,Oregon,east,16
+CenturyLink,20,1.5,Oregon,northwest,33
+CenturyLink,20,1.5,Oregon,southwest,16
+CenturyLink,20,2,Oregon,east,86
+CenturyLink,20,2,Oregon,northwest,268
+CenturyLink,20,2,Oregon,southwest,59
+CenturyLink,20,5,Oregon,east,19
+CenturyLink,20,5,Oregon,northwest,107
+CenturyLink,20,5,Oregon,southwest,2
+CenturyLink,25,2,Oregon,east,19
+CenturyLink,25,2,Oregon,northwest,43
+CenturyLink,25,2,Oregon,southwest,16
+CenturyLink,30,1.5,Oregon,east,12
+CenturyLink,30,1.5,Oregon,northwest,26
+CenturyLink,30,1.5,Oregon,southwest,10
+CenturyLink,40,2,Oregon,east,79
+CenturyLink,40,2,Oregon,northwest,342
+CenturyLink,40,2,Oregon,southwest,51
+CenturyLink,40,5,Oregon,east,78
+CenturyLink,40,5,Oregon,northwest,456
+CenturyLink,40,5,Oregon,southwest,78
+CenturyLink,40,20,Oregon,east,38
+CenturyLink,40,20,Oregon,northwest,155
+CenturyLink,40,20,Oregon,southwest,43
+CenturyLink,60,5,Oregon,east,76
+CenturyLink,60,5,Oregon,northwest,380
+CenturyLink,60,5,Oregon,southwest,86
+CenturyLink,60,30,Oregon,east,3
+CenturyLink,60,30,Oregon,northwest,10
+CenturyLink,60,30,Oregon,southwest,1
+CenturyLink,80,10,Oregon,east,48
+CenturyLink,80,10,Oregon,northwest,387
+CenturyLink,80,10,Oregon,southwest,45
+CenturyLink,80,40,Oregon,east,36
+CenturyLink,80,40,Oregon,northwest,267
+CenturyLink,80,40,Oregon,southwest,21
+CenturyLink,100,10,Oregon,east,47
+CenturyLink,100,10,Oregon,northwest,350
+CenturyLink,100,10,Oregon,southwest,43
+CenturyLink,100,50,Oregon,east,7
+CenturyLink,100,50,Oregon,northwest,113
+CenturyLink,100,50,Oregon,southwest,6
+CenturyLink,100,100,Oregon,east,1
+CenturyLink,100,100,Oregon,northwest,2
+CenturyLink,100,100,Oregon,southwest,3
+CenturyLink,120,10,Oregon,east,22
+CenturyLink,120,10,Oregon,northwest,158
+CenturyLink,120,10,Oregon,southwest,6
+CenturyLink,140,20,Oregon,east,26
+CenturyLink,140,20,Oregon,northwest,195
+CenturyLink,140,20,Oregon,southwest,13
+CenturyLink,1000,1000,Oregon,east,23
+CenturyLink,1000,1000,Oregon,northwest,318
+CenturyLink,1000,1000,Oregon,southwest,25
+Charter Communications Inc,120,10,Oregon,east,7
+Charter Communications Inc,300,20,Oregon,east,6
+Charter Communications Inc,300,20,Oregon,northwest,5
+Charter Communications Inc,400,20,Oregon,northwest,5
+Charter Communications Inc,940,35,Oregon,east,23
+Charter Communications Inc,940,35,Oregon,northwest,64
+Charter Communications Inc,940,35,Oregon,southwest,110
+Clatskanie Co-op,100,50,Oregon,northwest,1
+Cleer Creek Communications,10,1,Oregon,northwest,5
+Cleer Creek Communications,100,6,Oregon,northwest,7
+CoastCom,1.5,1.5,Oregon,northwest,1
+CoastCom,16,2,Oregon,northwest,21
+CoastCom,40,40,Oregon,northwest,21
+CoastCom,1000,1000,Oregon,northwest,3
+Colton Telephone Company,150,50,Oregon,northwest,2
+Columbia iConnect,9,4,Oregon,east,3
+Comcast,987,35,Oregon,east,10
+Comcast,987,35,Oregon,northwest,519
+Comcast,987,35,Oregon,southwest,5
+Comcast,1000,1000,Oregon,northwest,11
+ComspanCommunications,10,10,Oregon,southwest,4
+ComspanCommunications,100,10,Oregon,southwest,4
+ComspanCommunications,1000,1000,Oregon,southwest,13
+DATAVISION COMMUNICATIONS LLC,10,1,Oregon,northwest,4
+DATAVISION COMMUNICATIONS LLC,15,1,Oregon,northwest,4
+DATAVISION COMMUNICATIONS LLC,30,10,Oregon,northwest,1
+DATAVISION COMMUNICATIONS LLC,1000,100,Oregon,northwest,13
+DATAVISION COMMUNICATIONS LLC,1000,1000,Oregon,northwest,5
+DirectLink,1.5,0.5,Oregon,northwest,6
+DirectLink,5,0.5,Oregon,northwest,9
+DirectLink,10,1,Oregon,northwest,9
+DirectLink,30,5,Oregon,northwest,6
+DirectLink,1000,1000,Oregon,northwest,10
+Douglas Fast Net,20,1,Oregon,southwest,19
+Douglas Fast Net,40,5,Oregon,southwest,13
+Douglas Fast Net,1000,1000,Oregon,northwest,6
+Douglas Fast Net,1000,1000,Oregon,southwest,34
+Eagle Telephone Systems,3,2,Oregon,east,2
+Eagle Telephone Systems,10,4,Oregon,east,2
+"Eastern Oregon Net, Inc",1.5,1.5,Oregon,east,2
+"Eastern Oregon Net, Inc",2,0.275,Oregon,east,21
+"Eastern Oregon Net, Inc",5,1.1,Oregon,east,23
+"Eastern Oregon Net, Inc",5,5,Oregon,east,1
+"Eastern Oregon Net, Inc",10,2,Oregon,east,1
+"Eastern Oregon Net, Inc",10,5,Oregon,east,1
+"Eastern Oregon Net, Inc",10,10,Oregon,east,6
+"Eastern Oregon Net, Inc",11,2,Oregon,east,19
+"Eastern Oregon Net, Inc",11,11,Oregon,east,1
+"Eastern Oregon Net, Inc",17,2,Oregon,east,19
+"Eastern Oregon Net, Inc",20,20,Oregon,east,2
+"Eastern Oregon Net, Inc",30,5,Oregon,east,1
+"Eastern Oregon Net, Inc",30,10,Oregon,east,2
+"Eastern Oregon Net, Inc",30,30,Oregon,east,1
+"Eastern Oregon Net, Inc",33,5,Oregon,east,18
+"Eastern Oregon Net, Inc",33,11,Oregon,east,13
+"Eastern Oregon Net, Inc",33,30,Oregon,east,1
+"Eastern Oregon Net, Inc",33,33,Oregon,east,1
+"Eastern Oregon Net, Inc",60,60,Oregon,east,2
+"Eastern Oregon Net, Inc",66,11,Oregon,east,2
+"Eastern Oregon Net, Inc",66,22,Oregon,east,2
+"Eastern Oregon Net, Inc",100,100,Oregon,east,1
+"Eastern Oregon Net, Inc",110,33,Oregon,east,3
+"Eastern Oregon Net, Inc",110,110,Oregon,east,1
+"Eastern Oregon Net, Inc",1000,100,Oregon,east,4
+"Eastern Oregon Net, Inc",1000,110,Oregon,east,2
+"Eastern Oregon Net, Inc",1000,1000,Oregon,east,1
+Eastern Oregon Telecom,20,1,Oregon,east,10
+Eastern Oregon Telecom,20,6,Oregon,east,10
+Eastern Oregon Telecom,100,10,Oregon,east,5
+Eastern Oregon Telecom,1000,1000,Oregon,east,6
+Farmers Mutual Telephone Company,10,1,Oregon,east,7
+Farmers Mutual Telephone Company,12,1.5,Oregon,east,6
+Farmers Mutual Telephone Company,16,1.5,Oregon,east,6
+Farmers Mutual Telephone Company,20,1.5,Oregon,east,3
+Farmers Mutual Telephone Company,50,5,Oregon,east,5
+FireServe,20,20,Oregon,southwest,2
+FireServe,50,20,Oregon,southwest,2
+FireServe,100,20,Oregon,southwest,19
+FireServe,1000,1000,Oregon,southwest,2
+Frontier Communications Corporation,1,0.128,Oregon,east,26
+Frontier Communications Corporation,1,0.128,Oregon,northwest,253
+Frontier Communications Corporation,1,0.128,Oregon,southwest,79
+Frontier Communications Corporation,6,1,Oregon,east,23
+Frontier Communications Corporation,6,1,Oregon,northwest,349
+Frontier Communications Corporation,6,1,Oregon,southwest,65
+Frontier Communications Corporation,6,2,Oregon,east,10
+Frontier Communications Corporation,6,2,Oregon,northwest,159
+Frontier Communications Corporation,6,2,Oregon,southwest,27
+Frontier Communications Corporation,12,1,Oregon,east,10
+Frontier Communications Corporation,12,1,Oregon,northwest,178
+Frontier Communications Corporation,12,1,Oregon,southwest,47
+Frontier Communications Corporation,12,2,Oregon,east,12
+Frontier Communications Corporation,12,2,Oregon,northwest,252
+Frontier Communications Corporation,12,2,Oregon,southwest,41
+Frontier Communications Corporation,25,2,Oregon,east,18
+Frontier Communications Corporation,25,2,Oregon,northwest,339
+Frontier Communications Corporation,25,2,Oregon,southwest,50
+Frontier Communications Corporation,100,100,Oregon,east,7
+Frontier Communications Corporation,100,100,Oregon,northwest,163
+Frontier Communications Corporation,100,100,Oregon,southwest,4
+Gorge Networks,1.5,0.5,Oregon,east,3
+Gorge Networks,1.5,0.56,Oregon,east,12
+Gorge Networks,1.5,1,Oregon,east,1
+Gorge Networks,3,0.74,Oregon,east,14
+Gorge Networks,3,1,Oregon,east,1
+Gorge Networks,5,0.9,Oregon,east,13
+Gorge Networks,5,0.9,Oregon,northwest,1
+Gorge Networks,5,1,Oregon,east,9
+Gorge Networks,5,1.5,Oregon,east,1
+Gorge Networks,5,2,Oregon,east,1
+Gorge Networks,5,5,Oregon,east,1
+Gorge Networks,7,1,Oregon,east,4
+Gorge Networks,7,1.5,Oregon,east,1
+Gorge Networks,7,7,Oregon,east,1
+Gorge Networks,8,1,Oregon,east,1
+Gorge Networks,10,1,Oregon,northwest,1
+Gorge Networks,10,1.5,Oregon,east,3
+Gorge Networks,10,2,Oregon,east,2
+Gorge Networks,10,5,Oregon,east,1
+Gorge Networks,12,1.5,Oregon,east,5
+Gorge Networks,12,2,Oregon,east,1
+Gorge Networks,15,1.5,Oregon,east,7
+Gorge Networks,20,2,Oregon,east,2
+Gorge Networks,20,3,Oregon,east,1
+Gorge Networks,20,5,Oregon,east,1
+Gorge Networks,20,15,Oregon,east,1
+Gorge Networks,20,20,Oregon,east,1
+Gorge Networks,25,5,Oregon,east,1
+Gorge Networks,30,2,Oregon,east,1
+Gorge Networks,30,5,Oregon,east,1
+Gorge Networks,30,10,Oregon,east,1
+Gorge Networks,50,20,Oregon,east,1
+Gorge Networks,100,10,Oregon,east,3
+Gorge Networks,100,100,Oregon,east,2
+HelixTelephone,5,1,Oregon,east,2
+HelixTelephone,10,1,Oregon,east,2
+HOME TELEPHONE CO,6,1,Oregon,east,1
+HOME TELEPHONE CO,15,3,Oregon,east,1
+HOME TELEPHONE CO,30,3,Oregon,east,1
+HOME TELEPHONE CO,150,50,Oregon,east,1
+HughesNet,25,3,Oregon,east,91
+HughesNet,25,3,Oregon,northwest,613
+HughesNet,25,3,Oregon,southwest,119
+HUMBOLDT TELEPHONE COMPANY,4,1,Oregon,east,1
+HUMBOLDT TELEPHONE COMPANY,6,1,Oregon,east,1
+HUMBOLDT TELEPHONE COMPANY,10,1,Oregon,east,1
+Hunter Communications Inc,50,10,Oregon,northwest,1
+Hunter Communications Inc,50,10,Oregon,southwest,2
+Hunter Communications Inc,300,30,Oregon,southwest,2
+Hunter Communications Inc,1000,100,Oregon,southwest,74
+Infostructure,0.256,0.256,Oregon,southwest,2
+Infostructure,1.5,0.256,Oregon,southwest,1
+Infostructure,1.5,0.896,Oregon,east,15
+Infostructure,1.5,0.896,Oregon,northwest,32
+Infostructure,1.5,0.896,Oregon,southwest,52
+Infostructure,1.5,1,Oregon,southwest,3
+Infostructure,1.5,1.5,Oregon,northwest,9
+Infostructure,1.5,1.5,Oregon,southwest,5
+Infostructure,2,1,Oregon,east,1
+Infostructure,2,1,Oregon,southwest,3
+Infostructure,3,0.896,Oregon,east,2
+Infostructure,3,0.896,Oregon,northwest,1
+Infostructure,3,0.896,Oregon,southwest,13
+Infostructure,3,2,Oregon,southwest,5
+Infostructure,3,3,Oregon,northwest,3
+Infostructure,3,3,Oregon,southwest,2
+Infostructure,5,0.896,Oregon,northwest,1
+Infostructure,5,0.896,Oregon,southwest,1
+Infostructure,5,1,Oregon,southwest,9
+Infostructure,5,2,Oregon,southwest,1
+Infostructure,5,5,Oregon,east,1
+Infostructure,5,5,Oregon,northwest,6
+Infostructure,5,5,Oregon,southwest,4
+Infostructure,6,1,Oregon,southwest,6
+Infostructure,6,2,Oregon,southwest,5
+Infostructure,6,6,Oregon,northwest,1
+Infostructure,7,0.896,Oregon,east,4
+Infostructure,7,0.896,Oregon,northwest,7
+Infostructure,7,0.896,Oregon,southwest,13
+Infostructure,7,1,Oregon,east,1
+Infostructure,7,1,Oregon,northwest,2
+Infostructure,7,1,Oregon,southwest,2
+Infostructure,7,5,Oregon,northwest,3
+Infostructure,7,5,Oregon,southwest,1
+Infostructure,10,0.896,Oregon,southwest,1
+Infostructure,10,1,Oregon,southwest,2
+Infostructure,10,2,Oregon,southwest,13
+Infostructure,10,10,Oregon,east,2
+Infostructure,10,10,Oregon,northwest,4
+Infostructure,10,10,Oregon,southwest,10
+Infostructure,12,0.896,Oregon,east,1
+Infostructure,12,0.896,Oregon,northwest,3
+Infostructure,12,0.896,Oregon,southwest,5
+Infostructure,12,1,Oregon,southwest,1
+Infostructure,12,5,Oregon,southwest,2
+Infostructure,12,12,Oregon,southwest,1
+Infostructure,15,1,Oregon,east,2
+Infostructure,15,1,Oregon,northwest,8
+Infostructure,15,1,Oregon,southwest,10
+Infostructure,15,2,Oregon,southwest,1
+Infostructure,15,3,Oregon,southwest,4
+Infostructure,15,5,Oregon,southwest,1
+Infostructure,15,15,Oregon,east,1
+Infostructure,16,3,Oregon,northwest,1
+Infostructure,20,0.896,Oregon,northwest,1
+Infostructure,20,2,Oregon,southwest,1
+Infostructure,20,5,Oregon,east,2
+Infostructure,20,5,Oregon,northwest,3
+Infostructure,20,5,Oregon,southwest,7
+Infostructure,20,20,Oregon,northwest,4
+Infostructure,20,20,Oregon,southwest,10
+Infostructure,24,2,Oregon,northwest,2
+Infostructure,24,2,Oregon,southwest,4
+Infostructure,25,4,Oregon,east,3
+Infostructure,25,5,Oregon,southwest,2
+Infostructure,25,25,Oregon,northwest,1
+Infostructure,30,4,Oregon,northwest,6
+Infostructure,30,4,Oregon,southwest,22
+Infostructure,30,30,Oregon,east,2
+Infostructure,30,30,Oregon,northwest,2
+Infostructure,30,30,Oregon,southwest,1
+Infostructure,32,32,Oregon,northwest,1
+Infostructure,32,32,Oregon,southwest,3
+Infostructure,40,5,Oregon,northwest,1
+Infostructure,40,40,Oregon,northwest,3
+Infostructure,40,40,Oregon,southwest,2
+Infostructure,50,5,Oregon,northwest,3
+Infostructure,50,5,Oregon,southwest,1
+Infostructure,50,10,Oregon,northwest,2
+Infostructure,50,25,Oregon,southwest,6
+Infostructure,50,50,Oregon,northwest,1
+Infostructure,50,50,Oregon,southwest,4
+Infostructure,60,4,Oregon,northwest,4
+Infostructure,60,4,Oregon,southwest,40
+Infostructure,60,5,Oregon,northwest,2
+Infostructure,60,5,Oregon,southwest,48
+Infostructure,80,80,Oregon,northwest,1
+Infostructure,80,80,Oregon,southwest,1
+Infostructure,100,7,Oregon,northwest,3
+Infostructure,100,7,Oregon,southwest,23
+Infostructure,100,20,Oregon,northwest,4
+Infostructure,100,50,Oregon,southwest,3
+Infostructure,100,100,Oregon,northwest,4
+Infostructure,100,100,Oregon,southwest,17
+Infostructure,120,8,Oregon,southwest,5
+Infostructure,150,20,Oregon,northwest,1
+Infostructure,180,11,Oregon,southwest,4
+Infostructure,200,200,Oregon,northwest,2
+Infostructure,200,200,Oregon,southwest,1
+Infostructure,220,26,Oregon,southwest,2
+Infostructure,250,75,Oregon,southwest,1
+Infostructure,300,7,Oregon,northwest,2
+Infostructure,300,7,Oregon,southwest,2
+Infostructure,1000,1000,Oregon,northwest,1
+Infostructure,1000,1000,Oregon,southwest,4
+Johnco PTP LLC,75,75,Oregon,northwest,5
+King Street Wireless L.P.,10,2,Oregon,east,1
+King Street Wireless L.P.,10,2,Oregon,northwest,79
+Lane Fi,5,2,Oregon,northwest,1
+Lane Fi,10,3,Oregon,northwest,1
+Lane Fi,15,5,Oregon,northwest,1
+Lane Fi,20,7,Oregon,northwest,1
+Lane Fi,25,9,Oregon,northwest,1
+Lane Fi,25,25,Oregon,northwest,1
+Lane Fi,30,10,Oregon,northwest,1
+Lane Fi,35,12,Oregon,northwest,1
+Lane Fi,50,25,Oregon,northwest,1
+Lane Fi,50,30,Oregon,northwest,1
+LSNetworks,20,2,Oregon,east,16
+LSNetworks,40,4,Oregon,east,7
+LSNetworks,50,5,Oregon,east,3
+LSNetworks,100,8,Oregon,east,1
+MiWave,5,1,Oregon,east,3
+MiWave,10,5,Oregon,east,1
+MiWave,11,2,Oregon,east,3
+MiWave,11,5,Oregon,east,1
+MiWave,15,5,Oregon,east,1
+MiWave,16,2,Oregon,east,2
+MiWave,16,5,Oregon,east,1
+MiWave,20,10,Oregon,east,2
+MiWave,21,5,Oregon,east,2
+MiWave,21,10,Oregon,east,1
+MiWave,21,20,Oregon,east,2
+MiWave,31,10,Oregon,east,2
+MiWave,31,15,Oregon,east,1
+MiWave,50,10,Oregon,east,1
+MiWave,50,15,Oregon,east,1
+MiWave,100,100,Oregon,east,2
+Molalla Communications Company,10,1,Oregon,northwest,1
+Molalla Communications Company,10,2,Oregon,northwest,2
+Molalla Communications Company,1000,1000,Oregon,northwest,6
+Monitor Cooperative Telephone Company,6,1,Oregon,northwest,11
+Monitor Cooperative Telephone Company,100,50,Oregon,northwest,11
+MonmouthIndependenceNetworks,1000,1000,Oregon,northwest,3
+Monroe Telephone Company,6,1,Oregon,northwest,15
+Monroe Telephone Company,6,1,Oregon,southwest,1
+Monroe Telephone Company,20,20,Oregon,northwest,4
+Mosier WiNet,1.5,0.384,Oregon,east,1
+Mosier WiNet,3,0.512,Oregon,east,4
+Mosier WiNet,5,0.784,Oregon,east,4
+Mosier WiNet,7,1,Oregon,east,1
+Mosier WiNet,12,1.5,Oregon,east,1
+Mosier WiNet,12,1.5,Oregon,northwest,1
+Mosier WiNet,25,3,Oregon,east,1
+Mosier WiNet,100,100,Oregon,east,2
+NativeNetworkInc,25,5,Oregon,northwest,3
+NEHALEM TELECOM,50,1,Oregon,northwest,2
+North-State Telephone Co.,6,1,Oregon,east,1
+North-State Telephone Co.,150,50,Oregon,east,1
+OnlineNW,10,1,Oregon,northwest,6
+OnlineNW,11,3,Oregon,northwest,108
+OnlineNW,12,1,Oregon,northwest,6
+OnlineNW,15,1,Oregon,northwest,4
+OnlineNW,200,200,Oregon,northwest,4
+OnlineNW,400,400,Oregon,northwest,9
+Orcas Online,3,3,Oregon,northwest,2
+Orcas Online,8,8,Oregon,northwest,1
+Oregon Telephone Corporation,6,1,Oregon,east,4
+Oregon Telephone Corporation,15,3,Oregon,east,5
+Oregon Telephone Corporation,50,10,Oregon,east,2
+Oregon Telephone Corporation,150,50,Oregon,east,3
+Oregon Telephone Corporation,500,100,Oregon,east,5
+Oregon-Idaho Utilities Inc,1.5,0.512,Oregon,east,1
+Oregon-Idaho Utilities Inc,3,1,Oregon,east,1
+Oregon-Idaho Utilities Inc,4,1,Oregon,east,2
+Oregon-Idaho Utilities Inc,6,1,Oregon,east,3
+Oregon-Idaho Utilities Inc,10,1,Oregon,east,4
+Oregon-Idaho Utilities Inc,15,3,Oregon,east,1
+Oregon-Idaho Utilities Inc,20,1,Oregon,east,1
+Oregon-Idaho Utilities Inc,25,3,Oregon,east,2
+PEAK Internet,20,20,Oregon,northwest,60
+"Pine Telephone System, Inc.",4,1,Oregon,east,7
+"Pine Telephone System, Inc.",6,1,Oregon,east,2
+"Pine Telephone System, Inc.",10,1,Oregon,east,4
+"Pine Telephone System, Inc.",20,1,Oregon,east,1
+"Pine Telephone System, Inc.",50,10,Oregon,east,1
+"Pine Telephone System, Inc.",150,50,Oregon,east,1
+Pioneer Telephone Cooperative,6,1,Oregon,northwest,11
+Pioneer Telephone Cooperative,10,1,Oregon,northwest,15
+Pioneer Telephone Cooperative,20,1,Oregon,northwest,15
+Pioneer Telephone Cooperative,25,3,Oregon,northwest,16
+Pioneer Telephone Cooperative,50,5,Oregon,northwest,14
+Pioneer Telephone Cooperative,100,20,Oregon,northwest,26
+"PocketiNet Communications, Inc.",3,1,Oregon,east,14
+"PocketiNet Communications, Inc.",10,3,Oregon,east,3
+PrineTIME Internet Solutions,3,1,Oregon,east,3
+PrineTIME Internet Solutions,8,2,Oregon,east,3
+PrineTIME Internet Solutions,10,2,Oregon,east,2
+PrineTIME Internet Solutions,10,4,Oregon,east,30
+Rogue Broadband,25,5,Oregon,southwest,30
+Roome Telecommunications Inc,0.768,0.768,Oregon,northwest,2
+Roome Telecommunications Inc,2,0.512,Oregon,northwest,2
+Roome Telecommunications Inc,3,0.512,Oregon,northwest,1
+Roome Telecommunications Inc,4,1,Oregon,northwest,2
+Roome Telecommunications Inc,6,1,Oregon,northwest,1
+Roome Telecommunications Inc,10,1,Oregon,northwest,2
+Roome Telecommunications Inc,15,1,Oregon,northwest,1
+Roome Telecommunications Inc,25,5,Oregon,northwest,1
+Roome Telecommunications Inc,100,5,Oregon,northwest,1
+Safelink Internet,25,5,Oregon,east,7
+SCIO MUTUAL TELEPHONE,1000,1000,Oregon,northwest,3
+SCS,6,1,Oregon,northwest,2
+SCS,10,1,Oregon,northwest,2
+SCS,15,3,Oregon,northwest,1
+SCS,25,3,Oregon,northwest,1
+SCS,100,50,Oregon,northwest,1
+SCS,200,200,Oregon,northwest,1
+SCS,1000,1000,Oregon,northwest,1
+SCTC/PTC,6,1,Oregon,northwest,11
+SCTC/PTC,10,1,Oregon,northwest,12
+SCTC/PTC,15,3,Oregon,northwest,6
+SCTC/PTC,25,3,Oregon,northwest,3
+SCTC/PTC,50,5,Oregon,northwest,4
+SCTC/PTC,50,50,Oregon,northwest,2
+SCTC/PTC,100,50,Oregon,northwest,3
+SCTC/PTC,100,100,Oregon,northwest,3
+SCTC/PTC,200,200,Oregon,northwest,3
+SCTC/PTC,1000,1000,Oregon,northwest,1
+Siuslaw Broadband,3,1.5,Oregon,southwest,1
+Siuslaw Broadband,40,20,Oregon,northwest,7
+Sky Fiber Internet,100,100,Oregon,southwest,1
+Skybeam,5,3,Oregon,east,1
+Skybeam,5,5,Oregon,east,7
+Skybeam,15,15,Oregon,east,4
+Skycasters,2,1.3,Oregon,east,91
+Skycasters,2,1.3,Oregon,northwest,613
+Skycasters,2,1.3,Oregon,southwest,119
+St Paul Coop Telephone Assoc,20,1,Oregon,northwest,3
+St Paul Coop Telephone Assoc,100,100,Oregon,northwest,2
+Sureline Broadband,50,5,Oregon,east,35
+Sureline Broadband,50,5,Oregon,northwest,2
+Sureline Broadband,50,5,Oregon,southwest,1
+TDS TELECOM,1,0.512,Oregon,east,1
+TDS TELECOM,5,0.512,Oregon,east,1
+Tekfinity,20,2,Oregon,east,3
+Tnet Broadband Internet LLC,1,3,Oregon,southwest,1
+Tnet Broadband Internet LLC,1,5,Oregon,southwest,1
+Tnet Broadband Internet LLC,1,8,Oregon,southwest,1
+Tnet Broadband Internet LLC,1,10,Oregon,southwest,2
+Tnet Broadband Internet LLC,1,12,Oregon,southwest,1
+Tnet Broadband Internet LLC,1,16,Oregon,southwest,3
+Tnet Broadband Internet LLC,1,21,Oregon,southwest,1
+Tnet Broadband Internet LLC,1,25,Oregon,southwest,1
+Tnet Broadband Internet LLC,1,50,Oregon,southwest,1
+Tnet Broadband Internet LLC,1,100,Oregon,southwest,1
+Tnet Broadband Internet LLC,5,3,Oregon,southwest,1
+Tnet Broadband Internet LLC,10,5,Oregon,northwest,1
+Tnet Broadband Internet LLC,10,5,Oregon,southwest,1
+Tnet Broadband Internet LLC,16,8,Oregon,southwest,2
+Tnet Broadband Internet LLC,21,10,Oregon,northwest,1
+Tnet Broadband Internet LLC,21,10,Oregon,southwest,3
+Tnet Broadband Internet LLC,25,15,Oregon,southwest,1
+Tnet Broadband Internet LLC,31,16,Oregon,southwest,2
+Tnet Broadband Internet LLC,100,5,Oregon,southwest,1
+Tnet Broadband Internet LLC,100,100,Oregon,southwest,1
+Tnet Broadband Internet LLC,300,300,Oregon,southwest,1
+Trans Cascade,3,1,Oregon,east,1
+Trans Cascade,6,1,Oregon,east,1
+Trans Cascade,10,1,Oregon,east,5
+United States Cellular Corporation,2,2,Oregon,east,90
+United States Cellular Corporation,2,2,Oregon,northwest,25
+United States Cellular Corporation,2,2,Oregon,southwest,114
+"Upward Access, LLC",20,4,Oregon,northwest,16
+Viasat Inc,35,3,Oregon,east,62
+Viasat Inc,35,3,Oregon,northwest,148
+Viasat Inc,35,3,Oregon,southwest,106
+Viasat Inc,100,3,Oregon,east,60
+Viasat Inc,100,3,Oregon,northwest,498
+Viasat Inc,100,3,Oregon,southwest,33
+Viser,25,3,Oregon,northwest,16
+Viser,25,5,Oregon,northwest,1
+Viser,60,60,Oregon,northwest,2
+Viser,100,10,Oregon,northwest,1
+Viser,100,100,Oregon,northwest,4
+Viser,300,300,Oregon,northwest,4
+Viser,1000,1000,Oregon,northwest,4
+Wallowa Valley Networks,100,20,Oregon,east,3
+Warm Springs Telecommunications Company,4,1,Oregon,east,9
+Warm Springs Telecommunications Company,4,1,Oregon,northwest,1
+Wave,10,1.2,Oregon,northwest,42
+Wave,15,1.2,Oregon,northwest,17
+Wave,18,1.2,Oregon,northwest,2
+Wave,30,1.3,Oregon,northwest,2
+Wave,50,10,Oregon,northwest,13
+Wave,55,10,Oregon,northwest,32
+Wave,80,15,Oregon,northwest,1
+Wave,100,5,Oregon,northwest,116
+Wave,100,100,Oregon,northwest,16
+Wave,110,10,Oregon,northwest,54
+Wave,250,20,Oregon,northwest,104
+Wave,500,20,Oregon,northwest,15
+Wave,1000,10,Oregon,northwest,94
+Webformix,40,10,Oregon,east,31
+Webformix,40,10,Oregon,southwest,19
+Whiz to Coho Inc,20,20,Oregon,northwest,32
+Wtechlink,30,30,Oregon,east,8
+Wtechlink,800,800,Oregon,east,6
+XS Media,5,3,Oregon,northwest,13
+XS Media,10,2,Oregon,northwest,6
+XS Media,10,3,Oregon,northwest,20
+XS Media,15,3,Oregon,northwest,14
+XS Media,20,5,Oregon,northwest,2
+XS Media,25,5,Oregon,northwest,19
+XS Media,30,5,Oregon,northwest,32
+XS Media,30,15,Oregon,northwest,1
+XS Media,50,5,Oregon,northwest,1
+XS Media,250,150,Oregon,northwest,1
+XS Media,250,250,Oregon,northwest,1
+XS Media,1000,1000,Oregon,northwest,4
