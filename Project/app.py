@@ -80,7 +80,7 @@ fcc_by_tract = pd.read_csv("data/fcc_bytract.csv")
 fcc_by_tract.to_sql("fcc_tracts",  con=engine, if_exists="replace", index_label=None)
 #________*_________*_________*_________*_________*_________*_________*_________*
 #________*_________*_________*_________*_________*_________*_________*_________*
-filtered_fcc = pd.read_csv("data/fcc_groupedbyregion_andcompany_andspeed.csv")
+filtered_fcc = pd.read_csv("data/fcc_region_broadband_bySpeed.csv")
 
 filtered_fcc.to_sql("fcc", con=engine, if_exists="replace", index_label=None)
 
@@ -205,7 +205,6 @@ from race_query import race_query, race_columns, pie_query
 @app.route("/treemap/<string:region>/")
 def treemap(region='northwest'):
     
-    print(race_query.format(region))
     results = engine.execute(pie_query.format(region))
     white = []
     native = []
@@ -214,13 +213,6 @@ def treemap(region='northwest'):
     hawaiian = []
     other = []
     two_plus = []
-    # white_int = []
-    # native_int = []
-    # black_int= []
-    # asian_int = []
-    # hawaiian_int = []
-    # other_int = []
-    # two_plus_int = []
     labels = ['white','native','black','asian','hawaiian','other','two_plus']
     for row in results:
         white.append(row[0])
@@ -230,39 +222,7 @@ def treemap(region='northwest'):
         hawaiian.append(row[4])
         other.append(row[5])
         two_plus.append(row[6])
-        # white_int.append(row[8])
-        # native_int.append(row[9])
-        # black_int.append(row[10])
-        # asian_int.append(row[11])
-        # hawaiian_int.append(row[12])
-        # other_int.append(row[13])
-        # two_plus_int.append(row[14]) 
-            #"_ci" : row[7],
-            # "wci" : row[8],
-            # "nci" : row[9],
-            # "bci" : row[10],
-            # "aci" : row[11],
-            # "hci" : row[12],
-            # "oci" : row[13],
-            # "tci" : row[14],
-            # "_cni": row[15],
-            # "wcni" : row[16],
-            # "ncni" : row[17],
-            # "bcni" : row[18],
-            # "acni" : row[19],
-            # "hcni" : row[20],
-            # "ocni" : row[21],
-            # "tcni" : row[22],
-            # "hl_any" : row[23],
-            # "w_not_hl" : row[24],
-            # "hl_any_ci" : row[25],
-            # "w_not_hl_ci" : row[26],
-            # "ncw" : row[27],
-            # "ncn" : row[28],
-            # "ncb" : row[29],
-            # "nca" : row[30],
-            # "nc_hl_any" : row[31],
-            # "nc_w_not_hl" : row[32],
+
 
     pie_data = [{
         "labels": labels,
@@ -344,6 +304,7 @@ def bar(region='northwest'):
         "type": "bar"
     }]
     return jsonify(bar_data)
+
 
     #print(jsonify(bar_data))
 
