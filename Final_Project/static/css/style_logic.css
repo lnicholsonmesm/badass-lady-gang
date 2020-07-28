@@ -1,0 +1,12 @@
+/* remove default margin and padding from body */
+html,
+body,
+#map-id {
+  position: relative;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  height: 500px;
+  width: 100;
+  /* padding: 100;
+  margin: 100; */
+}
