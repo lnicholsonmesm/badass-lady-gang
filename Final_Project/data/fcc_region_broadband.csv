@@ -1,0 +1,324 @@
+DBA Name,Technology Code,Max Advertised Downstream Speed (mbps),Max Advertised Upstream Speed (mbps),state,Region,NumberBlocksServiceAvailable_ByCompanyAndRegion
+"Alyrica Networks, Inc.",50,1000,1000,Oregon,northwest,41
+Cable ONE,42,1000,50,Oregon,east,700
+CenturyLink,50,1000,1000,Oregon,east,144
+CenturyLink,50,1000,1000,Oregon,northwest,12107
+CenturyLink,50,1000,1000,Oregon,southwest,133
+CoastCom,50,1000,1000,Oregon,northwest,4
+Comcast,50,1000,1000,Oregon,northwest,11
+ComspanCommunications,50,1000,1000,Oregon,southwest,330
+DATAVISION COMMUNICATIONS LLC,50,1000,100,Oregon,northwest,285
+DATAVISION COMMUNICATIONS LLC,50,1000,1000,Oregon,northwest,12
+DirectLink,50,1000,1000,Oregon,northwest,476
+Douglas Fast Net,50,1000,1000,Oregon,northwest,44
+Douglas Fast Net,50,1000,1000,Oregon,southwest,5957
+"Eastern Oregon Net, Inc",50,1000,100,Oregon,east,34
+"Eastern Oregon Net, Inc",50,1000,110,Oregon,east,2
+"Eastern Oregon Net, Inc",50,1000,1000,Oregon,east,1
+Eastern Oregon Telecom,50,1000,1000,Oregon,east,484
+FireServe,50,1000,1000,Oregon,southwest,93
+Hunter Communications Inc,50,1000,100,Oregon,southwest,942
+Infostructure,50,1000,1000,Oregon,northwest,1
+Infostructure,50,1000,1000,Oregon,southwest,4
+Molalla Communications Company,50,1000,1000,Oregon,northwest,396
+MonmouthIndependenceNetworks,50,1000,1000,Oregon,northwest,374
+SCIO MUTUAL TELEPHONE,50,1000,1000,Oregon,northwest,185
+SCS,50,1000,1000,Oregon,northwest,1
+SCTC/PTC,50,1000,1000,Oregon,northwest,3
+Viser,50,1000,1000,Oregon,northwest,27
+Wave,42,1000,10,Oregon,northwest,119
+Wave,43,1000,10,Oregon,northwest,874
+XS Media,50,1000,1000,Oregon,northwest,10
+Comcast,43,987,35,Oregon,east,17
+Comcast,43,987,35,Oregon,northwest,35560
+Comcast,43,987,35,Oregon,southwest,6
+Charter Communications Inc,43,940,35,Oregon,east,2620
+Charter Communications Inc,43,940,35,Oregon,northwest,7510
+Charter Communications Inc,43,940,35,Oregon,southwest,16815
+Wtechlink,50,800,800,Oregon,east,841
+BendBroadband,42,600,20,Oregon,east,3360
+BendBroadband,42,600,20,Oregon,southwest,7
+BendBroadband,50,600,20,Oregon,east,147
+Oregon Telephone Corporation,50,500,100,Oregon,east,351
+Wave,42,500,20,Oregon,northwest,3
+Wave,43,500,20,Oregon,northwest,15
+Charter Communications Inc,43,400,20,Oregon,northwest,601
+OnlineNW,50,400,400,Oregon,northwest,210
+Charter Communications Inc,43,300,20,Oregon,east,899
+Charter Communications Inc,43,300,20,Oregon,northwest,556
+Hunter Communications Inc,42,300,30,Oregon,southwest,16
+Infostructure,42,300,7,Oregon,northwest,2
+Infostructure,42,300,7,Oregon,southwest,2
+Tnet Broadband Internet LLC,70,300,300,Oregon,southwest,1
+Viser,0,300,300,Oregon,northwest,12
+Viser,50,300,300,Oregon,northwest,1
+Infostructure,50,250,75,Oregon,southwest,1
+Wave,41,250,20,Oregon,northwest,2
+Wave,42,250,20,Oregon,northwest,351
+Wave,43,250,20,Oregon,northwest,685
+XS Media,50,250,250,Oregon,northwest,1
+XS Media,70,250,150,Oregon,northwest,1
+Infostructure,42,220,26,Oregon,southwest,2
+Infostructure,50,200,200,Oregon,northwest,2
+Infostructure,50,200,200,Oregon,southwest,2
+OnlineNW,50,200,200,Oregon,northwest,36
+SCS,50,200,200,Oregon,northwest,1
+SCTC/PTC,50,200,200,Oregon,northwest,4
+Infostructure,42,180,11,Oregon,southwest,7
+Colton Telephone Company,50,150,50,Oregon,northwest,132
+HOME TELEPHONE CO,50,150,50,Oregon,east,91
+Infostructure,42,150,20,Oregon,northwest,1
+North-State Telephone Co.,50,150,50,Oregon,east,108
+Oregon Telephone Corporation,50,150,50,Oregon,east,17
+"Pine Telephone System, Inc.",50,150,50,Oregon,east,130
+CenturyLink,11,140,20,Oregon,east,1
+CenturyLink,11,140,20,Oregon,northwest,2
+CenturyLink,12,140,20,Oregon,east,619
+CenturyLink,12,140,20,Oregon,northwest,2102
+CenturyLink,12,140,20,Oregon,southwest,18
+CenturyLink,10,120,10,Oregon,northwest,1
+CenturyLink,11,120,10,Oregon,northwest,1
+CenturyLink,12,120,10,Oregon,east,240
+CenturyLink,12,120,10,Oregon,northwest,794
+CenturyLink,12,120,10,Oregon,southwest,7
+Charter Communications Inc,43,120,10,Oregon,east,823
+Infostructure,42,120,8,Oregon,southwest,13
+"Eastern Oregon Net, Inc",50,110,33,Oregon,east,3
+"Eastern Oregon Net, Inc",50,110,110,Oregon,east,1
+Wave,42,110,10,Oregon,northwest,43
+Wave,43,110,10,Oregon,northwest,87
+"600Amps Internet Services, Inc.",70,100,100,Oregon,southwest,54
+Beavercreek Cooperative Telephone Company,40,100,5,Oregon,northwest,138
+BendBroadband,42,100,10,Oregon,east,1191
+Cascade Utilities,50,100,50,Oregon,east,5
+Cascade Utilities,50,100,50,Oregon,northwest,244
+Cascade Utilities,50,100,50,Oregon,southwest,57
+CenturyLink,10,100,10,Oregon,east,2
+CenturyLink,10,100,10,Oregon,northwest,1
+CenturyLink,10,100,50,Oregon,northwest,1
+CenturyLink,11,100,10,Oregon,east,8
+CenturyLink,11,100,10,Oregon,northwest,15
+CenturyLink,11,100,10,Oregon,southwest,3
+CenturyLink,11,100,50,Oregon,northwest,4
+CenturyLink,11,100,50,Oregon,southwest,3
+CenturyLink,12,100,10,Oregon,east,403
+CenturyLink,12,100,10,Oregon,northwest,3020
+CenturyLink,12,100,10,Oregon,southwest,215
+CenturyLink,12,100,50,Oregon,northwest,9
+CenturyLink,12,100,50,Oregon,southwest,2
+CenturyLink,50,100,50,Oregon,east,10
+CenturyLink,50,100,50,Oregon,northwest,167
+CenturyLink,50,100,50,Oregon,southwest,1
+CenturyLink,50,100,100,Oregon,east,1
+CenturyLink,50,100,100,Oregon,northwest,10
+CenturyLink,50,100,100,Oregon,southwest,13
+Clatskanie Co-op,70,100,50,Oregon,northwest,7
+Cleer Creek Communications,42,100,6,Oregon,northwest,121
+ComspanCommunications,12,100,10,Oregon,southwest,34
+"Eastern Oregon Net, Inc",50,100,100,Oregon,east,1
+Eastern Oregon Telecom,42,100,10,Oregon,east,440
+FireServe,70,100,20,Oregon,southwest,3402
+Frontier Communications Corporation,50,100,100,Oregon,east,42
+Frontier Communications Corporation,50,100,100,Oregon,northwest,8852
+Frontier Communications Corporation,50,100,100,Oregon,southwest,22
+Gorge Networks,12,100,10,Oregon,east,2
+Gorge Networks,50,100,10,Oregon,east,30
+Gorge Networks,50,100,100,Oregon,east,40
+Infostructure,42,100,7,Oregon,northwest,3
+Infostructure,42,100,7,Oregon,southwest,30
+Infostructure,42,100,20,Oregon,northwest,4
+Infostructure,50,100,50,Oregon,southwest,3
+Infostructure,50,100,100,Oregon,northwest,4
+Infostructure,50,100,100,Oregon,southwest,31
+LSNetworks,50,100,8,Oregon,east,1
+MiWave,70,100,100,Oregon,east,6
+Monitor Cooperative Telephone Company,50,100,50,Oregon,northwest,88
+Mosier WiNet,50,100,100,Oregon,east,13
+Pioneer Telephone Cooperative,12,100,20,Oregon,northwest,379
+Pioneer Telephone Cooperative,50,100,20,Oregon,northwest,38
+Roome Telecommunications Inc,42,100,5,Oregon,northwest,60
+SCS,50,100,50,Oregon,northwest,1
+SCTC/PTC,50,100,50,Oregon,northwest,6
+SCTC/PTC,50,100,100,Oregon,northwest,4
+Sky Fiber Internet,70,100,100,Oregon,southwest,1
+St Paul Coop Telephone Assoc,50,100,100,Oregon,northwest,49
+Tnet Broadband Internet LLC,70,100,5,Oregon,southwest,1
+Tnet Broadband Internet LLC,70,100,100,Oregon,southwest,2
+Viasat Inc,60,100,3,Oregon,east,23126
+Viasat Inc,60,100,3,Oregon,northwest,68228
+Viasat Inc,60,100,3,Oregon,southwest,20989
+Viser,10,100,100,Oregon,northwest,1
+Viser,50,100,10,Oregon,northwest,1
+Viser,50,100,100,Oregon,northwest,21
+Wallowa Valley Networks,70,100,20,Oregon,east,1217
+Wave,30,100,100,Oregon,northwest,56
+Wave,41,100,5,Oregon,northwest,12
+Wave,42,100,5,Oregon,northwest,317
+Wave,43,100,5,Oregon,northwest,513
+CenturyLink,10,80,10,Oregon,east,1
+CenturyLink,10,80,10,Oregon,northwest,10
+CenturyLink,10,80,10,Oregon,southwest,1
+CenturyLink,10,80,40,Oregon,east,1
+CenturyLink,10,80,40,Oregon,northwest,1
+CenturyLink,11,80,10,Oregon,east,15
+CenturyLink,11,80,10,Oregon,northwest,62
+CenturyLink,11,80,10,Oregon,southwest,1
+CenturyLink,11,80,40,Oregon,east,3
+CenturyLink,11,80,40,Oregon,northwest,23
+CenturyLink,11,80,40,Oregon,southwest,1
+CenturyLink,12,80,10,Oregon,east,383
+CenturyLink,12,80,10,Oregon,northwest,2009
+CenturyLink,12,80,10,Oregon,southwest,138
+CenturyLink,12,80,40,Oregon,east,119
+CenturyLink,12,80,40,Oregon,northwest,760
+CenturyLink,12,80,40,Oregon,southwest,30
+Infostructure,50,80,80,Oregon,northwest,1
+Infostructure,50,80,80,Oregon,southwest,1
+Wave,43,80,15,Oregon,northwest,1
+Johnco PTP LLC,70,75,75,Oregon,northwest,28
+"Eastern Oregon Net, Inc",70,66,11,Oregon,east,8
+"Eastern Oregon Net, Inc",70,66,22,Oregon,east,5
+CenturyLink,10,60,5,Oregon,northwest,6
+CenturyLink,10,60,5,Oregon,southwest,2
+CenturyLink,11,60,5,Oregon,east,25
+CenturyLink,11,60,5,Oregon,northwest,84
+CenturyLink,11,60,5,Oregon,southwest,21
+CenturyLink,11,60,30,Oregon,east,1
+CenturyLink,11,60,30,Oregon,northwest,3
+CenturyLink,12,60,5,Oregon,east,632
+CenturyLink,12,60,5,Oregon,northwest,1610
+CenturyLink,12,60,5,Oregon,southwest,741
+CenturyLink,12,60,30,Oregon,east,3
+CenturyLink,12,60,30,Oregon,northwest,7
+CenturyLink,12,60,30,Oregon,southwest,1
+"Eastern Oregon Net, Inc",50,60,60,Oregon,east,2
+Infostructure,42,60,4,Oregon,northwest,4
+Infostructure,42,60,4,Oregon,southwest,74
+Infostructure,42,60,5,Oregon,northwest,2
+Infostructure,42,60,5,Oregon,southwest,101
+Viser,50,60,60,Oregon,northwest,4
+Wave,41,55,10,Oregon,northwest,2
+Wave,42,55,10,Oregon,northwest,22
+Wave,43,55,10,Oregon,northwest,26
+"Blackfoot Communications, Inc.",50,50,50,Oregon,northwest,1
+Cal-Ore Communications Inc.,12,50,4,Oregon,southwest,3
+Cal-Ore Communications Inc.,50,50,4,Oregon,southwest,177
+Farmers Mutual Telephone Company,70,50,5,Oregon,east,11
+FireServe,70,50,20,Oregon,southwest,212
+Gorge Networks,70,50,20,Oregon,east,1
+Hunter Communications Inc,70,50,10,Oregon,northwest,1
+Hunter Communications Inc,70,50,10,Oregon,southwest,30
+Infostructure,42,50,5,Oregon,northwest,3
+Infostructure,42,50,5,Oregon,southwest,1
+Infostructure,42,50,10,Oregon,northwest,2
+Infostructure,50,50,25,Oregon,southwest,12
+Infostructure,50,50,50,Oregon,northwest,1
+Infostructure,50,50,50,Oregon,southwest,4
+Lane Fi,70,50,25,Oregon,northwest,1
+Lane Fi,70,50,30,Oregon,northwest,1
+LSNetworks,30,50,5,Oregon,east,2
+LSNetworks,50,50,5,Oregon,east,1
+MiWave,70,50,10,Oregon,east,1
+MiWave,70,50,15,Oregon,east,1
+Oregon Telephone Corporation,12,50,10,Oregon,east,22
+"Pine Telephone System, Inc.",12,50,10,Oregon,east,130
+Pioneer Telephone Cooperative,12,50,5,Oregon,northwest,169
+SCTC/PTC,50,50,5,Oregon,northwest,19
+SCTC/PTC,50,50,50,Oregon,northwest,3
+Sureline Broadband,70,50,5,Oregon,east,8730
+Sureline Broadband,70,50,5,Oregon,northwest,85
+Sureline Broadband,70,50,5,Oregon,southwest,781
+Wave,42,50,10,Oregon,northwest,9
+Wave,43,50,10,Oregon,northwest,7
+XS Media,10,50,5,Oregon,northwest,1
+"Alyrica Networks, Inc.",50,40,5,Oregon,northwest,52
+"Alyrica Networks, Inc.",70,40,5,Oregon,northwest,18224
+Azure Standard,70,40,10,Oregon,east,1
+CenturyLink,10,40,5,Oregon,east,2
+CenturyLink,10,40,5,Oregon,northwest,4
+CenturyLink,10,40,5,Oregon,southwest,3
+CenturyLink,11,40,5,Oregon,east,11
+CenturyLink,11,40,5,Oregon,northwest,38
+CenturyLink,11,40,5,Oregon,southwest,12
+CenturyLink,11,40,20,Oregon,east,1
+CenturyLink,11,40,20,Oregon,northwest,5
+CenturyLink,11,40,20,Oregon,southwest,2
+CenturyLink,12,40,5,Oregon,east,316
+CenturyLink,12,40,5,Oregon,northwest,941
+CenturyLink,12,40,5,Oregon,southwest,495
+CenturyLink,12,40,20,Oregon,east,54
+CenturyLink,12,40,20,Oregon,northwest,128
+CenturyLink,12,40,20,Oregon,southwest,130
+CenturyLink,50,40,5,Oregon,east,535
+CenturyLink,50,40,5,Oregon,northwest,1358
+CenturyLink,50,40,5,Oregon,southwest,46
+CenturyLink,50,40,20,Oregon,east,95
+CenturyLink,50,40,20,Oregon,northwest,199
+CenturyLink,50,40,20,Oregon,southwest,6
+CoastCom,20,40,40,Oregon,northwest,1502
+Douglas Fast Net,12,40,5,Oregon,southwest,1641
+Infostructure,11,40,5,Oregon,northwest,1
+Infostructure,30,40,40,Oregon,southwest,4
+Infostructure,50,40,40,Oregon,northwest,3
+LSNetworks,30,40,4,Oregon,east,15
+Siuslaw Broadband,70,40,20,Oregon,northwest,750
+Webformix,70,40,10,Oregon,east,7782
+Webformix,70,40,10,Oregon,southwest,2496
+Lane Fi,70,35,12,Oregon,northwest,1
+Viasat Inc,60,35,3,Oregon,east,30168
+Viasat Inc,60,35,3,Oregon,northwest,22506
+Viasat Inc,60,35,3,Oregon,southwest,30301
+"Eastern Oregon Net, Inc",50,33,5,Oregon,east,11
+"Eastern Oregon Net, Inc",50,33,11,Oregon,east,3
+"Eastern Oregon Net, Inc",50,33,30,Oregon,east,1
+"Eastern Oregon Net, Inc",70,33,5,Oregon,east,214
+"Eastern Oregon Net, Inc",70,33,11,Oregon,east,57
+"Eastern Oregon Net, Inc",70,33,33,Oregon,east,1
+Infostructure,30,32,32,Oregon,northwest,1
+Infostructure,30,32,32,Oregon,southwest,3
+MiWave,70,31,10,Oregon,east,10
+MiWave,70,31,15,Oregon,east,1
+Tnet Broadband Internet LLC,70,31,16,Oregon,southwest,8
+DATAVISION COMMUNICATIONS LLC,12,30,10,Oregon,northwest,12
+DirectLink,12,30,5,Oregon,northwest,49
+"Eastern Oregon Net, Inc",42,30,5,Oregon,east,1
+"Eastern Oregon Net, Inc",42,30,10,Oregon,east,142
+"Eastern Oregon Net, Inc",50,30,30,Oregon,east,1
+Gorge Networks,50,30,5,Oregon,east,1
+Gorge Networks,70,30,10,Oregon,east,1
+HOME TELEPHONE CO,12,30,3,Oregon,east,2
+Infostructure,30,30,30,Oregon,southwest,1
+Infostructure,42,30,4,Oregon,northwest,6
+Infostructure,42,30,4,Oregon,southwest,30
+Infostructure,50,30,30,Oregon,east,2
+Infostructure,50,30,30,Oregon,northwest,2
+Lane Fi,70,30,10,Oregon,northwest,1
+Wtechlink,70,30,30,Oregon,east,1615
+XS Media,70,30,5,Oregon,northwest,246
+XS Media,70,30,15,Oregon,northwest,1
+Azure Standard,70,25,10,Oregon,east,14
+Cal-Ore Communications Inc.,12,25,3,Oregon,southwest,4
+Gorge Networks,50,25,5,Oregon,east,1
+HughesNet,60,25,3,Oregon,east,52740
+HughesNet,60,25,3,Oregon,northwest,88381
+HughesNet,60,25,3,Oregon,southwest,49170
+Infostructure,30,25,25,Oregon,northwest,1
+Infostructure,42,25,4,Oregon,east,4
+Infostructure,42,25,5,Oregon,southwest,3
+Lane Fi,70,25,9,Oregon,northwest,15
+Lane Fi,70,25,25,Oregon,northwest,1
+Mosier WiNet,70,25,3,Oregon,east,2
+NativeNetworkInc,10,25,5,Oregon,northwest,11
+Oregon-Idaho Utilities Inc,12,25,3,Oregon,east,18
+Oregon-Idaho Utilities Inc,50,25,3,Oregon,east,8
+Pioneer Telephone Cooperative,12,25,3,Oregon,northwest,220
+Rogue Broadband,70,25,5,Oregon,southwest,182
+Roome Telecommunications Inc,11,25,5,Oregon,northwest,1
+Safelink Internet,70,25,5,Oregon,east,2555
+SCS,50,25,3,Oregon,northwest,1
+SCTC/PTC,10,25,3,Oregon,northwest,3
+SCTC/PTC,50,25,3,Oregon,northwest,2
+Tnet Broadband Internet LLC,70,25,15,Oregon,southwest,1
+Viser,70,25,3,Oregon,northwest,145
+Viser,70,25,5,Oregon,northwest,2
+XS Media,70,25,5,Oregon,northwest,31
