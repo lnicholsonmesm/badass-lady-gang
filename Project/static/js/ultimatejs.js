@@ -2,7 +2,8 @@ function optionChanged(val) {
     var region = val;
     drawCharts(region);
     buildCharts(region);
-    barCharts(region)
+    barCharts(region);
+
 };
 
 // PIE CHART
@@ -17,7 +18,8 @@ function drawCharts(region) {
             width: 500
         };
         Plotly.newPlot('treemap', data, layout);
-    })};
+    })
+};
 
 //BAR CHART
 
@@ -26,8 +28,8 @@ function drawCharts(region) {
 
 function barCharts(region) {
     d3.json(`/bar/${region}`).then((response) => {
-            /////////////////////////////////////////////////////////
-            console.log(response);
+        /////////////////////////////////////////////////////////
+        console.log(response);
         var trace1 = response;
         var barData = [trace1];
         var layout = {
@@ -40,17 +42,17 @@ function barCharts(region) {
                 r: 100,
                 t: 100,
                 b: 100
-                },
-            };
+            },
+        };
         Plotly.newPlot('bubble', barData, layout);
-        })
-    };
+    })
+};
 //     var jsonData = $.ajax({
 //         url: "/bar/<region>/",
 //         dataType: "json",
 //         async: false
 //         }).responseText;
-          
+
 //     // Create our data table out of JSON data loaded from server.
 //     var data = new google.visualization.DataTable(jsonData);
 
@@ -87,7 +89,7 @@ function barCharts(region) {
 //     //   };
 //       var chart = new google.visualization.BarChart(document.getElementById('bubble'));
 //       chart.draw(data);
-    // }
+// }
 
 
 // //drawChart("northwest");
@@ -120,7 +122,7 @@ async function buildCharts(region) {
 
         let bubble_layout = {
             title: "What kind of Internet is accessible in each Region?",
-            yaxis:{
+            yaxis: {
                 title: {
                     text: 'Max download speed (mbps)'
                 },

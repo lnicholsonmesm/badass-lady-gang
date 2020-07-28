@@ -45,23 +45,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#"> <span class="sr-only">About Us</span></a>
+          <a class="nav-link" href="#">Reset data <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select Region
+          <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            onchange="optionChanged(this.value)" aria-haspopup="true" aria-expanded="false">
+            Select a Region
           </a>
-          <!--<div class="dropdown-menu" id="getRegion" aria-labelledby="navbarDropdown">-->
-          <select id="getRegion" onchange="optionChanged(this.value)">
-            <option></option>>
-            <option>northwest</option>
-            <option>southwest</option>
-            <option>east</option>
-          </select>
-    </div>
-    </li>
-    </ul>
+          <div class="dropdown-menu" id="region" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/northwest">Northwest Oregon</a>
+            <a class="dropdown-item" href="/southwest">Southwest Oregon</a>
+            <a class="dropdown-item" href="#">Central Oregon</a>-->
+
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
   <br>
@@ -75,18 +73,21 @@
   <br>
   <div class="row">
     <div class="col-md-6 align-center">
-      <img src="../static/images/internet2.jpeg" width= "1400px">
+      <img src="../static/images/internet2.jpeg" width="1400px">
     </div>
   </div>
 
 
   <div class="row">
     <div class="col-md-6 text-center">
-      <h4>"As Americans turn to the internet for critical purposes, there are rekindled debates about how the digital divide – that is, the gap between those who do or do not have access to technology – may hinder people’s ability to complete everyday tasks or even schoolwork." <i>--- Pewresearch.org</i></h4>
+      <h4>"As Americans turn to the internet for critical purposes, there are rekindled debates about how the digital
+        divide – that is, the gap between those who do or do not have access to technology – may hinder people’s ability
+        to complete everyday tasks or even schoolwork." <i>--- Pewresearch.org</i></h4>
     </div>
 
     <div class="col-md-6 text-center">
-      <h4>"Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits." <i> ---(Article 27 of the UDHR)</i></h4>
+      <h4>"Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to
+        share in scientific advancement and its benefits." <i> ---(Article 27 of the UDHR)</i></h4>
       <div id="treemap" style="width: 900px; height: 500px;"></div>
     </div>
   </div>
@@ -117,19 +118,23 @@
 
 
 </body>
+
 <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Reset data <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"> <span class="sr-only">About Us</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            onchange="optionChanged(this.value)" aria-haspopup="true" aria-expanded="false">
-            Select a Region
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Select Region
           </a>
-          <div class="dropdown-menu" id="region" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/northwest">Northwest Oregon</a>
-            <a class="dropdown-item" href="/southwest">Southwest Oregon</a>
-            <a class="dropdown-item" href="#">Central Oregon</a>-->
+
+            <select id="getRegion" onchange="optionChanged(this.value)">
+              <option></option>>
+              <option>northwest</option>
+              <option>southwest</option>
+              <option>east</option>
+            </select>-->
 
 </html>
